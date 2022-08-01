@@ -14,17 +14,13 @@ const Header = () => {
             </header>
         </div >
     );
-
     function getData() {
-        console.log("we hurr");
-        const res = axios("localhost:3000/projects").then((res) => {
+        const res = axios.get("localhost:3000/projects").then((res) => {
             setData(res.data);
         });
         console.log(res);
         // .then((res) => { setData(res.data) })
     }
 }
-
-
 
 export default Header;
