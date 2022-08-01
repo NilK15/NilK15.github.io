@@ -2,25 +2,41 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Header = () => {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
+    const [loaded, setLoaded] = useState(false);
+    const [error, setError] = useState("");
+
     useEffect(() => {
-        return getData();
+        console.log("HELLOO")
+        const fetchData = async () => {
+            try {
+                const {data: response} = await axios.get('/api/projects');
+                setData(response);
+            } catch (error) {
+                setError(error.message);
+            } finally {
+                console.log(data);
+                setLoaded(true);
+            }
+        }
+
+        fetchData();
     }, []);
+
     return (
-        <div className="Header">
-            <header className="Header-Items">
-                <h1>  Project Portfolio </h1>
-                <p> {data} </p>
-            </header>
-        </div >
+        <div>
+
+            <div className="Header">
+                <header className="Header-Items">
+                    <h1>  Project Portfolio </h1>
+                </header>
+                <br></br>
+            </div >
+            <code>{JSON.stringify(data, null, 2)}</code>
+        </div>
     );
-    function getData() {
-        const res = axios.get("localhost:3000/projects").then((res) => {
-            setData(res.data);
-        });
-        console.log(res);
-        // .then((res) => { setData(res.data) })
-    }
 }
+
+
 
 export default Header;
