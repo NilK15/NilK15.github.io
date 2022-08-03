@@ -4,7 +4,6 @@
 
 html, body{
     margin:0;
-
 }
 
 .App {
@@ -25,3 +24,70 @@ html, body{
     margin: 20px;
 }
 
+.dataItems {
+    overflow-y: scroll;
+    width: 1000%;
+    height: 200px;
+
+}
+
+.getDiv{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* width: 50%; */
+}
+
+.getButton{
+    /* background-color: #58a6ff; */
+    font-size: 50px;
+    width: 50%;
+    height: 200px;
+}
+
+.postDiv{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* width: 50%; */
+}
+
+.postButton{
+    /* background-color: #58a6ff; */
+    font-size: 50px;
+    width: 50%;
+    height: 200px;
+}
+
+.dataItems{
+    font-size: 20px;
+    width: 50%;
+}
+
+/* .formContainer{ */
+/*     width:50%; */
+
+/* } */
+.formItems{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    /* padding: 20px; */
+}
+
+/* label{ */
+/*     /1* display: flex; *1/ */
+/*     /1* flex-direction: column; *1/ */
+/*     /1* white-space: nowrap; *1/ */
+/*     /1* font-size: 12px; *1/ */
+/*     /1* padding-left:10px; *1/ */
+/*     /1* margin: 0%; *1/ */
+/*     /1* padding: 0%; *1/ */
+/* } */
+
+/* input[type="text"]{ */
+/*     /1* height: 100%; *1/ */
+/*     width: 100%; */
+/* } */
