@@ -39,46 +39,32 @@ const Body = () => {
                 </div>
             </div>
             <div className='postDiv'>
-                <button className='postButton' onClick={fetchDataGet}> Post
-                    Request
+                <button className='postButton' onClick={fetchDataGet}> Post Request
                 </button>
                 <div className='formContainer'>
                     <form className="formItems">
-                        <div className='labelDivs'>
-                            <label> Project Name:
-                                <input type="text" name="projectName" />
-                            </label>
-                        </div>
+                        <label> Project Name:</label>
+                        <input type="text" name="projectName" />
                         <br />
-                        <div className='labelDivs'>
-                            <label> Manager:
-                                <input type="text" name="manager" />
-                            </label>
-                        </div>
+                        <label> Manager:
+                        </label>
+                        <input type="text" name="manager" />
                         <br />
-                        <div className='labelDivs'>
-                            <label> Author:
-                                <input type="text" name="author" />
-                            </label>
-                        </div>
+                        <label> Author:
+                        </label>
+                        <input type="text" name="author" />
                         <br />
-                        <div className='labelDivs'>
-                            <label> Git URL:
-                                <input type="text" name="gitUrl" />
-                            </label>
-                        </div>
+                        <label> Git URL:
+                        </label>
+                        <input type="text" name="gitUrl" />
                         <br />
-                        <div className='labelDivs'>
-                            <label> Project Stack:
-                                <input type="text" name="projectStack" />
-                            </label>
-                        </div>
+                        <label> Project Stack:
+                        </label>
+                        <input type="text" name="projectStack" />
                         <br />
-                        <div className='labelDivs'>
-                            <label> Description:
-                                <input type="text" name="description" />
-                            </label>
-                        </div>
+                        <label> Description:
+                        </label>
+                        <input type="text" name="description" />
                     </form>
                 </div>
             </div>
