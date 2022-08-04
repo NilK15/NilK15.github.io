@@ -29,6 +29,17 @@ const Body = () => {
             setLoaded(true);
         }
     }
+    const fetchDataDelete = async () => {
+        try {
+            const { data: response } = await axios.delete('/api/projects');
+            // console.log(JSON.stringify(data, null, 2));
+            setData(response);
+        } catch (error) {
+            setError(error.message);
+        } finally {
+            setLoaded(true);
+        }
+    }
     return (
         <div className='bodyOverview'>
             <div className='getDiv'>
@@ -39,11 +50,12 @@ const Body = () => {
                 </div>
             </div>
             <div className='postDiv'>
-                <button className='postButton' onClick={fetchDataGet}> Post Request
+                <button className='postButton' onClick={fetchDataGet}> Post
+                    Request
                 </button>
                 <div className='formContainer'>
-                    <form className="formItems">
-                        <label> Project Name:</label>
+                    <form onSubmit={fetchDataPost}>
+                        <label> Project Name: </label>
                         <input type="text" name="projectName" />
                         <br />
                         <label> Manager:
@@ -65,8 +77,15 @@ const Body = () => {
                         <label> Description:
                         </label>
                         <input type="text" name="description" />
+                        <br />
+                        <input type="submit" name="description" />
                     </form>
                 </div>
+            </div>
+            <div className='deleteDiv'>
+                <button className='deleteButton' onClick={fetchDataDelete}> Delete
+                    Request
+                </button>
             </div>
         </div>
 
