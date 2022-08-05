@@ -11,6 +11,7 @@ const Body = () => {
         try {
             const { data: response } = await axios.get('/api/projects');
             // console.log(JSON.stringify(data, null, 2));
+            console.log("hi");
             setData(response);
         } catch (error) {
             setError(error.message);
@@ -19,12 +20,28 @@ const Body = () => {
         }
     }
     const fetchDataPost = async () => {
+        const projectName = (document.getElementById("projectName") as HTMLInputElement).value;
+        const manager = (document.getElementById("manager") as HTMLInputElement).value;
+        const author = (document.getElementById("author") as HTMLInputElement).value;
+        const gitUrl = (document.getElementById("gitUrl") as HTMLInputElement).value;
+        const projectStack = (document.getElementById("projectStack") as HTMLInputElement).value;
+        const description = (document.getElementById("description") as HTMLInputElement).value;
+
         try {
-            const { data: response } = await axios.post('/api/projects');
-            // console.log(JSON.stringify(data, null, 2));
+            console.log("hi");
+            // const { data: response } = await axios.post('/api/projects');
+            const { data: response } = await axios.post('/api/projects', {
+                projectName: projectName,
+                manager: manager,
+                author: author,
+                gitUrl: gitUrl,
+                projectStack: projectStack,
+                description: description
+            });
             setData(response);
         } catch (error) {
             setError(error.message);
+            console.log(error.message);
         } finally {
             setLoaded(true);
         }
@@ -56,29 +73,29 @@ const Body = () => {
                 <div className='formContainer'>
                     <form onSubmit={fetchDataPost}>
                         <label> Project Name: </label>
-                        <input type="text" name="projectName" />
+                        <input type="text" id="projectName" />
                         <br />
                         <label> Manager:
                         </label>
-                        <input type="text" name="manager" />
+                        <input type="text" id="manager" />
                         <br />
                         <label> Author:
                         </label>
-                        <input type="text" name="author" />
+                        <input type="text" id="author" />
                         <br />
                         <label> Git URL:
                         </label>
-                        <input type="text" name="gitUrl" />
+                        <input type="text" id="gitUrl" />
                         <br />
                         <label> Project Stack:
                         </label>
-                        <input type="text" name="projectStack" />
+                        <input type="text" id="projectStack" />
                         <br />
                         <label> Description:
                         </label>
-                        <input type="text" name="description" />
+                        <input type="text" id="description" />
                         <br />
-                        <input type="submit" name="description" />
+                        <input type="button" id="submission" onClick={fetchDataPost} value="Submit" />
                     </form>
                 </div>
             </div>
