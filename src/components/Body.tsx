@@ -19,7 +19,9 @@ const Body = () => {
             setLoaded(true);
         }
     }
-    const fetchDataPost = async () => {
+    const fetchDataPost = async (event) => {
+
+        event.preventDefault();
         const projectName = (document.getElementById("projectName") as HTMLInputElement).value;
         const manager = (document.getElementById("manager") as HTMLInputElement).value;
         const author = (document.getElementById("author") as HTMLInputElement).value;
@@ -67,11 +69,11 @@ const Body = () => {
                 </div>
             </div>
             <div className='postDiv'>
-                <button className='postButton' onClick={fetchDataGet}> Post
+                <button type="submit" form="myForm" className='postButton' > Post
                     Request
                 </button>
                 <div className='formContainer'>
-                    <form onSubmit={fetchDataPost}>
+                    <form id="myForm" onSubmit={fetchDataPost}>
                         <label> Project Name: </label>
                         <input type="text" id="projectName" />
                         <br />
@@ -95,7 +97,6 @@ const Body = () => {
                         </label>
                         <input type="text" id="description" />
                         <br />
-                        <input type="button" id="submission" onClick={fetchDataPost} value="Submit" />
                     </form>
                 </div>
             </div>
