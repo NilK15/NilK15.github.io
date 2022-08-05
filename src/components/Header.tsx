@@ -3,7 +3,7 @@ const Header = () => {
         <div>
             <div className="Header">
                 <header className="Header-Items">
-                    <h1>  Project Portfolio </h1>
+                    <h1 className="text-red-300">  Project Portfolio </h1>
                 </header>
             </div >
         </div>

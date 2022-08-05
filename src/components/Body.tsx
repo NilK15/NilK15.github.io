@@ -62,7 +62,7 @@ const Body = () => {
     return (
         <div className='bodyOverview'>
             <div className='getDiv'>
-                <button className='getButton' onClick={fetchDataGet}> Get Request
+                <button className='getButton' onClick={fetchDataGet}> Get Projects
                 </button>
                 <div className='dataItems'>
                     <pre>{JSON.stringify(data, null, 2)}</pre>
@@ -70,7 +70,7 @@ const Body = () => {
             </div>
             <div className='postDiv'>
                 <button type="submit" form="myForm" className='postButton' > Post
-                    Request
+                    Project
                 </button>
                 <div className='formContainer'>
                     <form id="myForm" className='formClass' onSubmit={fetchDataPost}>
@@ -100,9 +100,15 @@ const Body = () => {
                     </form>
                 </div>
             </div>
+            <div className='deletDivSpecific'>
+                <button className='deleteButton' onClick={fetchDataDelete}> Delete Project By ID
+                </button>
+                <div className='deletedProject'>
+                </div>
+            </div>
             <div className='deleteDiv'>
                 <button className='deleteButton' onClick={fetchDataDelete}> Delete
-                    Request
+                    Last Project
                 </button>
             </div>
         </div>
