@@ -1,6 +1,6 @@
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
+/* @tailwind base;  this defines preflight (base styles applied to help crossover across different browsers)/ */
+@tailwind components;
+@tailwind utilities;
 :root{
     --background-color: #202020;
 }
