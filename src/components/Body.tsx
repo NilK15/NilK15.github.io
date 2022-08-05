@@ -61,19 +61,19 @@ const Body = () => {
     }
     return (
         <div className='bodyOverview'>
-            <div className='getDiv'>
-                <button className='getButton' onClick={fetchDataGet}> Get Projects
+            <div className='getDiv border-solid border-green-100'>
+                <button className='getButton ' onClick={fetchDataGet}> Get Projects
                 </button>
-                <div className='dataItems'>
-                    <pre>{JSON.stringify(data, null, 2)}</pre>
+                <div className='dataItems bg-gray-900'>
+                    <pre className='text-xs text-gray-400'>{JSON.stringify(data, null, 2)}</pre>
                 </div>
             </div>
-            <div className='postDiv'>
+            <div className='postDiv border-solid border-purple-100'>
                 <button type="submit" form="myForm" className='postButton' > Post
                     Project
                 </button>
-                <div className='formContainer'>
-                    <form id="myForm" className='formClass' onSubmit={fetchDataPost}>
+                <div className='formContainer '>
+                    <form id="postForm" className='formClass' onSubmit={fetchDataPost}>
                         <label> Project Name: </label>
                         <input type="text" id="projectName" />
                         <br />
@@ -100,13 +100,17 @@ const Body = () => {
                     </form>
                 </div>
             </div>
-            <div className='deletDivSpecific'>
-                <button className='deleteButton' onClick={fetchDataDelete}> Delete Project By ID
+            <div className='deletDivSpecific flex border-solid border-blue-100'>
+                <button className='deleteButtonSpecific w-1/2 h-80 text-5xl' onClick={fetchDataDelete}> Delete Project By ID
                 </button>
-                <div className='deletedProject'>
+                <div className='block w-1/2 text-center'>
+                    <form id="idForm" className='pt-32'>
+                        <label className=''> Project ID:</label>
+                        <input type="text" id="description" />
+                    </form>
                 </div>
             </div>
-            <div className='deleteDiv'>
+            <div className='deleteDiv w-full'>
                 <button className='deleteButton' onClick={fetchDataDelete}> Delete
                     Last Project
                 </button>
