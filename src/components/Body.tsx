@@ -69,7 +69,7 @@ const Body = () => {
                 </div>
             </div>
             <div className='postDiv border-solid border-purple-100'>
-                <button type="submit" form="myForm" className='postButton' > Post
+                <button type="submit" form="postForm" className='postButton' > Post
                     Project
                 </button>
                 <div className='formContainer '>
