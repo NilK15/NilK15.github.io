@@ -73,7 +73,7 @@ const Body = () => {
                     Request
                 </button>
                 <div className='formContainer'>
-                    <form id="myForm" onSubmit={fetchDataPost}>
+                    <form id="myForm" className='formClass' onSubmit={fetchDataPost}>
                         <label> Project Name: </label>
                         <input type="text" id="projectName" />
                         <br />

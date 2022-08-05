@@ -50,9 +50,16 @@ html, body{
 }
 
 .formContainer{
+    display: block;
     height: 300px;
     width: 50%;
+    /* justify-content: center; */
     text-align: center;
+}
+
+.formClass{
+    padding-top: 20px;
+
 }
 
 label{
