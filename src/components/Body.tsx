@@ -10,8 +10,6 @@ const Body = () => {
     const fetchDataGet = async () => {
         try {
             const { data: response } = await axios.get('/api/projects');
-            // console.log(JSON.stringify(data, null, 2));
-            console.log("hi");
             setData(response);
         } catch (error) {
             setError(error.message);
@@ -20,7 +18,6 @@ const Body = () => {
         }
     }
     const fetchDataPost = async (event) => {
-
         event.preventDefault();
         const projectName = (document.getElementById("projectName") as HTMLInputElement).value;
         const manager = (document.getElementById("manager") as HTMLInputElement).value;
@@ -30,8 +27,6 @@ const Body = () => {
         const description = (document.getElementById("description") as HTMLInputElement).value;
 
         try {
-            console.log("hi");
-            // const { data: response } = await axios.post('/api/projects');
             const { data: response } = await axios.post('/api/projects', {
                 projectName: projectName,
                 manager: manager,
@@ -41,6 +36,7 @@ const Body = () => {
                 description: description
             });
             setData(response);
+            fetchDataGet();
         } catch (error) {
             setError(error.message);
             console.log(error.message);
@@ -52,13 +48,13 @@ const Body = () => {
         try {
             if (id == 0) {
                 const { data: response } = await axios.delete('/api/projects');
-                // console.log(JSON.stringify(data, null, 2));
                 setData(response);
+                fetchDataGet();
             }
             else {
                 const { data: response } = await axios.delete('/api/projects/' + id);
-                // console.log(JSON.stringify(data, null, 2));
                 setData(response);
+                fetchDataGet();
             }
         } catch (error) {
             setError(error.message);
@@ -123,7 +119,6 @@ const Body = () => {
                 </button>
             </div>
         </div >
-
     );
 }
 
