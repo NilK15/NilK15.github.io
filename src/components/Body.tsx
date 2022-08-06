@@ -113,7 +113,7 @@ const Body = () => {
                     </form>
                 </div>
             </div>
-            <div className='deleteDiv flex shadow-xl shadow-gray-900 rounded-xl mb-10 p-6 bg-pink-500 mt-3 border-pink-900'>
+            <div className='deleteDiv flex shadow-xl shadow-gray-900 rounded-xl mb-10 p-6 bg-pink-400 mt-3 border-pink-900'>
                 <button className='deleteButton rounded-xl shadow-xl shadow-gray-900 border-pink-900 font-bold bg-pink-200 hover:bg-pink-300 text-pink-900 cursor-pointer' onClick={() => fetchDataDelete(0)}> Delete
                     Last Project
                 </button>
