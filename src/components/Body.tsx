@@ -68,14 +68,14 @@ const Body = () => {
     }
     return (
         <div className='bodyOverview flex-col p-3 rounded-xl '>
-            <div className='getDiv mb-5 mt-3 rounded-xl border-green-800 bg-green-400 p-4'>
+            <div className='getDiv mb-5 mt-3 rounded-xl border-green-800 bg-green-400 p-4 shadow-xl shadow-gray-900'>
                 <button className='getButton text-green-900 shadow-2xl rounded-xl border-green-700 bg-green-200 cursor-pointer hover:bg-green-300' onClick={fetchDataGet}> Get Projects
                 </button>
                 <div className='dataItems bg-green-700 rounded-xl ml-4'>
                     <pre className='text-xs text-green-200'>{JSON.stringify(data, null, 2)}</pre>
                 </div>
             </div>
-            <div className='postDiv mt-3 mb-5 bg-purple-400 rounded-xl border-solid border-purple-700 text-purple-900 p-4'>
+            <div className='postDiv shadow-xl shadow-gray-900 mt-3 mb-5 bg-purple-400 rounded-xl border-solid border-purple-700 text-purple-900 p-4'>
                 <button type="submit" form="postForm" className='postButton shadow-2xl rounded-xl bg-purple-200 text-purple-900 border-purple-800 hover:bg-purple-300 cursor-pointer' > Post
                     Project
                 </button>
@@ -107,7 +107,7 @@ const Body = () => {
                     </form>
                 </div>
             </div>
-            <div className='deletDivSpecific flex mt-3 mb-5 rounded-xl border-solid blue-900 bg-blue-400 p-4'>
+            <div className='deletDivSpecific shadow-xl shadow-gray-900 flex mt-3 mb-5 rounded-xl border-solid blue-900 bg-blue-400 p-4'>
                 <button className='deleteButtonSpecific shadow-2xl rounded-xl border-blue-800 bg-blue-200 hover:bg-blue-300 text-blue-900 w-1/2 h-80 text-5xl' onClick={() => fetchDataDelete(parseInt((document.getElementById("idNumber") as HTMLInputElement).value))}> Delete Project By ID
                 </button>
                 <div className='block w-1/2 text-center'>
@@ -117,7 +117,7 @@ const Body = () => {
                     </form>
                 </div>
             </div>
-            <div className='deleteDiv flex rounded-xl mb-5 p-4 bg-pink-500 mt-3 border-solid border-pink-900'>
+            <div className='deleteDiv flex shadow-xl shadow-gray-900 rounded-xl mb-5 p-4 bg-pink-500 mt-3 border-solid border-pink-900'>
                 <button className='deleteButton rounded-xl shadow-2xl border-pink-900 bg-pink-200 hover:bg-pink-300 text-pink-900 cursor-pointer' onClick={() => fetchDataDelete(0)}> Delete
                     Last Project
                 </button>
