@@ -1,10 +1,9 @@
 import Header from './components/Header';
 import Body from './components/Body';
-import React from 'react';
 
 function App() {
     return (
-        <div>
+        <div className='bg-teal-100'>
             <Header />
             <Body />
         </div>

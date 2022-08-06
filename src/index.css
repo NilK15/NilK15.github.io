@@ -7,6 +7,8 @@
 
 html, body{
     margin:0;
+    --tw-bg-opacity: 1;
+    background-color: rgb(204 251 241 / var(--tw-bg-opacity));
 }
 
 .App {
