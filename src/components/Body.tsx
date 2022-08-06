@@ -71,7 +71,7 @@ const Body = () => {
             <div className='getDiv mb-5 mt-3 rounded-xl border-green-800 bg-green-400 p-6 shadow-xl shadow-gray-900'>
                 <button className='getButton text-green-900 shadow-xl shadow-gray-900 rounded-xl border-green-700 bg-green-200 cursor-pointer hover:bg-green-300' onClick={fetchDataGet}> Get Projects
                 </button>
-                <div className='dataItems bg-green-700 rounded-xl ml-4'>
+                <div className='dataItems bg-green-700 rounded-xl ml-4 text-center'>
                     <pre className='text-xs text-green-200'>{JSON.stringify(data, null, 2)}</pre>
                 </div>
             </div>
