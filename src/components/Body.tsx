@@ -71,7 +71,7 @@ const Body = () => {
                     <pre className='text-xs text-green-200'>{JSON.stringify(data, null, 2)}</pre>
                 </div>
             </div>
-            <div className='postDiv shadow-xl shadow-gray-900 mt-3 mb-5 bg-purple-400 rounded-xl border-solid border-purple-700 text-purple-900 p-6'>
+            <div className='postDiv shadow-xl shadow-gray-900 mt-3 mb-5 bg-purple-400 rounded-xl border-purple-700 text-purple-900 p-6'>
                 <button type="submit" form="postForm" className='postButton shadow-xl shadow-gray-900 rounded-xl bg-purple-200 text-purple-900 border-purple-800 hover:bg-purple-300 cursor-pointer' > Post
                     Project
                 </button>
@@ -103,7 +103,7 @@ const Body = () => {
                     </form>
                 </div>
             </div>
-            <div className='deletDivSpecific shadow-xl shadow-gray-900 flex mt-3 mb-5 rounded-xl border-solid blue-900 bg-blue-400 p-6'>
+            <div className='deletDivSpecific shadow-xl shadow-gray-900 flex mt-3 mb-5 rounded-xl blue-900 bg-blue-400 p-6'>
                 <button className='deleteButtonSpecific shadow-xl shadow-gray-900 rounded-xl border-blue-800 bg-blue-200 hover:bg-blue-300 text-blue-900 cursor-pointer w-1/2 h-80 text-5xl' onClick={() => fetchDataDelete(parseInt((document.getElementById("idNumber") as HTMLInputElement).value))}> Delete Project By ID
                 </button>
                 <div className='block w-1/2 text-center'>
@@ -113,7 +113,7 @@ const Body = () => {
                     </form>
                 </div>
             </div>
-            <div className='deleteDiv flex shadow-xl shadow-gray-900 rounded-xl mb-5 p-6 bg-pink-500 mt-3 border-solid border-pink-900'>
+            <div className='deleteDiv flex shadow-xl shadow-gray-900 rounded-xl mb-5 p-6 bg-pink-500 mt-3 border-pink-900'>
                 <button className='deleteButton rounded-xl shadow-xl shadow-gray-900 border-pink-900 bg-pink-200 hover:bg-pink-300 text-pink-900 cursor-pointer' onClick={() => fetchDataDelete(0)}> Delete
                     Last Project
                 </button>
