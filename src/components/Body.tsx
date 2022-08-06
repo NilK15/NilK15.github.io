@@ -67,7 +67,7 @@ const Body = () => {
             <div className='getDiv mb-10 mt-3 rounded-xl border-green-800 bg-green-400 p-6 shadow-xl shadow-gray-900'>
                 <button className='getButton text-green-900 shadow-xl shadow-gray-900 rounded-xl font-bold border-green-700 bg-green-200 cursor-pointer hover:bg-green-300' onClick={fetchDataGet}> Get Projects
                 </button>
-                <div className='dataItems bg-green-700 rounded-xl ml-4 text-center'>
+                <div className='dataItems overflow-y-auto bg-green-700 rounded-xl ml-4 text-center'>
                     <pre className='text-xs text-green-200'>{JSON.stringify(data, null, 2)}</pre>
                 </div>
             </div>
@@ -75,7 +75,7 @@ const Body = () => {
                 <button type="submit" form="postForm" className='postButton shadow-xl shadow-gray-900 font-bold  rounded-xl bg-purple-200 text-purple-900 border-purple-800 hover:bg-purple-300 cursor-pointer' > Post
                     Project
                 </button>
-                <div className='formContainer '>
+                <div className='formContainer overflow-y-auto'>
                     <form id="postForm" className='formClass' onSubmit={fetchDataPost}>
                         <label> Project Name: </label>
                         <input type="text" id="projectName" />
