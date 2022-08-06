@@ -67,7 +67,7 @@ const Body = () => {
         }
     }
     return (
-        <div className='bodyOverview flex-col p-3 rounded-xl bg-gray-500'>
+        <div className='bodyOverview flex-col p-3 rounded-xl '>
             <div className='getDiv mb-5 mt-3 rounded-xl border-green-800 bg-green-400 p-4'>
                 <button className='getButton shadow-2xl rounded-xl border-green-700 bg-green-200 cursor-pointer hover:bg-green-300' onClick={fetchDataGet}> Get Projects
                 </button>
