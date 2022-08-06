@@ -48,11 +48,18 @@ const Body = () => {
             setLoaded(true);
         }
     }
-    const fetchDataDelete = async () => {
+    const fetchDataDelete = async (id = 0) => {
         try {
-            const { data: response } = await axios.delete('/api/projects');
-            // console.log(JSON.stringify(data, null, 2));
-            setData(response);
+            if (id == 0) {
+                const { data: response } = await axios.delete('/api/projects');
+                // console.log(JSON.stringify(data, null, 2));
+                setData(response);
+            }
+            else {
+                const { data: response } = await axios.delete('/api/projects/' + id);
+                // console.log(JSON.stringify(data, null, 2));
+                setData(response);
+            }
         } catch (error) {
             setError(error.message);
         } finally {
@@ -101,21 +108,21 @@ const Body = () => {
                 </div>
             </div>
             <div className='deletDivSpecific flex border-solid border-blue-100'>
-                <button className='deleteButtonSpecific w-1/2 h-80 text-5xl' onClick={fetchDataDelete}> Delete Project By ID
+                <button className='deleteButtonSpecific w-1/2 h-80 text-5xl' onClick={() => fetchDataDelete(parseInt((document.getElementById("idNumber") as HTMLInputElement).value))}> Delete Project By ID
                 </button>
                 <div className='block w-1/2 text-center'>
                     <form id="idForm" className='pt-32'>
                         <label className=''> Project ID:</label>
-                        <input type="text" id="description" />
+                        <input type="number" id="idNumber" />
                     </form>
                 </div>
             </div>
             <div className='deleteDiv w-full'>
-                <button className='deleteButton' onClick={fetchDataDelete}> Delete
+                <button className='deleteButton' onClick={() => fetchDataDelete(0)}> Delete
                     Last Project
                 </button>
             </div>
-        </div>
+        </div >
 
     );
 }
