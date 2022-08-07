@@ -1,9 +1,9 @@
 const Header = () => {
     return (
         <div className="Header flex rounded-xl m-1 shadow-xl shadow-gray-900 mb-4 bg-gray-600">
-            <header className="rounded-full Header-Items w-full text-center">
-                <h1 className="text-slate-900 text-8xl m-4">  Project Portfolio </h1>
-            </header>
+            <div className="Header-Items m-5krounded-full w-full text-center">
+                <h1 className="text-white text-8xl m-4">  Project Portfolio </h1>
+            </div>
         </div>
     );
 }
