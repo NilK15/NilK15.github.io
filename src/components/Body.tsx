@@ -75,29 +75,31 @@ const Body = () => {
                 </div>
             </div>
             <div className='postDiv flex mb-10 shadow-xl shadow-gray-900 mt-3 bg-purple-400 rounded-xl border-purple-700 text-purple-900 p-6'>
-                <button type="submit" form="postForm" className='postButton transition ease-in-out hover:-translate-y-1 duration-300
-                w-1/2 h-80 text-5xl shadow-xl shadow-gray-900 font-bold  rounded-xl bg-purple-200
+                <div className='buttonHolder w-1/2'>
+                    <button type="submit" form="postForm" className='postButton transition ease-in-out hover:-translate-y-1 duration-300
+                w-full h-80 text-5xl shadow-xl shadow-gray-900 font-bold  rounded-xl bg-purple-200
                 text-purple-900 border-purple-800 hover:bg-purple-300
                 cursor-pointer' > Post Project </button>
-                <div className='formContainer block h-80 w-1/2 text-center overflow-y-auto'>
-                    <form id="postForm" className='formClass block pt-6' onSubmit={fetchDataPost}>
+                </div>
+                <div className='formContainer block text-center w-1/2 h-80 overflow-y-auto'>
+                    <form id="postForm" className='formClass pt-6 w-full' onSubmit={fetchDataPost}>
                         <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Project Name: </label>
-                        <input className='w-8/12' type="text" id="projectName" />
+                        <input className='w-2/3' type="text" id="projectName" />
                         <br />
                         <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Manager: </label>
-                        <input className='w-8/12' type="text" id="manager" />
+                        <input className='w-2/3' type="text" id="manager" />
                         <br />
                         <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Author: </label>
-                        <input className='w-8/12' type="text" id="author" />
+                        <input className='w-2/3' type="text" id="author" />
                         <br />
                         <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Git URL: </label>
-                        <input className='w-8/12' type="text" id="gitUrl" />
+                        <input className='w-2/3' type="text" id="gitUrl" />
                         <br />
                         <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Project Stack: </label>
-                        <input className='w-8/12' type="text" id="projectStack" />
+                        <input className='w-2/3' type="text" id="projectStack" />
                         <br />
                         <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Description: </label>
-                        <input className='w-8/12' type="text" id="description" />
+                        <input className='w-2/3' type="text" id="description" />
                         <br />
                     </form>
                 </div>
