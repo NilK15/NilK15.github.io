@@ -36,7 +36,8 @@ const Body = () => {
                 description: description
             });
             setData(response);
-            fetchDataGet();
+            setTimeout(fetchDataGet, 1500);
+
         } catch (error) {
             setError(error.message);
             console.log(error.message);
@@ -50,12 +51,12 @@ const Body = () => {
             if (id == 0) {
                 const { data: response } = await axios.delete('/api/projects');
                 setData(response);
-                fetchDataGet();
+                setTimeout(fetchDataGet, 1500);
             }
             else {
                 const { data: response } = await axios.delete('/api/projects/' + id);
                 setData(response);
-                fetchDataGet();
+                setTimeout(fetchDataGet, 1500);
             }
         } catch (error) {
             setError(error.message);
@@ -70,8 +71,10 @@ const Body = () => {
                 shadow-gray-900 rounded-xl font-bold border-green-700
                 bg-green-200 cursor-pointer hover:bg-green-300'
                     onClick={fetchDataGet}> Get Projects </button>
-                <div className='dataItems w-1/2 h-80 text-5xl overflow-y-auto bg-green-700 rounded-xl ml-4 text-center'>
-                    <pre className='text-xs text-green-200'>{JSON.stringify(data, null, 2)}</pre>
+                <div className='dataItems w-1/2 h-80 text-5xl overflow-y-auto bg-green-700 rounded-xl ml-4 '>
+                    <div className='flex justify-center jsonHolder'>
+                        <pre className='text-xl text-green-200'>{JSON.stringify(data, null, 2)}</pre>
+                    </div>
                 </div>
             </div>
             <div className='postDiv flex mb-10 shadow-xl shadow-gray-900 mt-3 bg-purple-400 rounded-xl border-purple-700 text-purple-900 p-6'>
@@ -82,24 +85,24 @@ const Body = () => {
                 cursor-pointer' > Post Project </button>
                 </div>
                 <div className='formContainer block text-center w-1/2 h-80 overflow-y-auto'>
-                    <form id="postForm" className='formClass pt-6 w-full' onSubmit={fetchDataPost}>
+                    <form id="postForm" className='formClass pt-6 pl-5 w-full' onSubmit={fetchDataPost}>
                         <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Project Name: </label>
-                        <input className='w-2/3' type="text" id="projectName" />
+                        <input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200' placeholder='    Enter Project Name...' type="text" id="projectName" />
                         <br />
-                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Manager: </label>
-                        <input className='w-2/3' type="text" id="manager" />
+                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Manager: </label>
+                        <input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200 ' placeholder='    Enter Manager Name...' type="text" id="manager" />
                         <br />
-                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Author: </label>
-                        <input className='w-2/3' type="text" id="author" />
+                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Author: </label>
+                        <input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200 ' placeholder='    Enter Author Name...' type="text" id="author" />
                         <br />
-                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Git URL: </label>
-                        <input className='w-2/3' type="text" id="gitUrl" />
+                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Git URL: </label>
+                        <input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200' placeholder='    Enter Git URL...' type="text" id="gitUrl" />
                         <br />
-                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Project Stack: </label>
-                        <input className='w-2/3' type="text" id="projectStack" />
+                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Project Stack: </label>
+                        <input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200' placeholder='    Enter Project Stack...' type="text" id="projectStack" />
                         <br />
-                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Description: </label>
-                        <input className='w-2/3' type="text" id="description" />
+                        <label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Description: </label>
+                        <input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200' placeholder='    Enter Description...' type="text" id="description" />
                         <br />
                     </form>
                 </div>
@@ -110,11 +113,9 @@ const Body = () => {
                 bg-blue-200 hover:bg-blue-300 text-blue-900 cursor-pointer
                 w-1/2 h-80 text-5xl' onClick={() => fetchDataDelete(parseInt((document.getElementById("idNumber") as HTMLInputElement).value))}>
                     Delete Project By ID </button>
-                <div className='block w-1/2 text-center'>
-                    <form id="idForm" className='pt-32'>
-                        <label className='text-blue-900 text-2xl'> Project ID: </label>
-                        <input type="number" id="idNumber" className='pt-1 ml-1' />
-                    </form>
+                <div className='flex w-1/2 items-center justify-center'>
+                    <label className=''> Project ID: </label>
+                    <input placeholder=' 0' type="number" id="idNumber" className='ml-4 w-20 text-center rounded-md shadow-xl shadow-gray-900 bg-blue-100 text-5xl' />
                 </div>
             </div>
             <div className='deleteDiv flex shadow-xl shadow-gray-900 rounded-xl mb-10 p-6 bg-pink-400 mt-3 border-pink-900'>
