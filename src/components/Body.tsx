@@ -115,7 +115,7 @@ const Body = () => {
                     Delete Project By ID </button>
                 <div className='flex w-1/2 items-center justify-center'>
                     <label className=''> Project ID: </label>
-                    <input placeholder=' 0' type="number" id="idNumber" className='ml-4 w-20 text-center rounded-md shadow-xl shadow-gray-900 bg-blue-100 text-5xl' />
+                    <input placeholder='0' type="number" id="idNumber" className='ml-4 pl-3 w-16 text-center rounded-md shadow-xl shadow-gray-900 bg-blue-100 text-5xl' />
                 </div>
             </div>
             <div className='deleteDiv flex shadow-xl shadow-gray-900 rounded-xl mb-10 p-6 bg-pink-400 mt-3 border-pink-900'>
