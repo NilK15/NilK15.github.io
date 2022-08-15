@@ -82,22 +82,22 @@ const Body = () => {
 				<div className='formContainer block text-center w-1/2 h-80 overflow-y-auto'>
 					<form id="postForm" className='formClass pt-6 pl-5 w-full' onSubmit={fetchDataPost}>
 						<label className='inline-block whitespace-nowrap m-1 mb-5 w-24'> Project Name: </label>
-						<input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200' placeholder='    Enter Project Name...' type="text" id="projectName" />
+						<input className='ml-4 w-2/3 rounded-full shadow-lg shadow-gray-900 bg-purple-200' placeholder='    Enter Project Name...' type="text" id="projectName" />
 						<br />
 						<label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Manager: </label>
-						<input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200 ' placeholder='    Enter Manager Name...' type="text" id="manager" />
+						<input className='ml-4 w-2/3 rounded-full shadow-lg shadow-gray-900 bg-purple-200 ' placeholder='    Enter Manager Name...' type="text" id="manager" />
 						<br />
 						<label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Author: </label>
-						<input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200 ' placeholder='    Enter Author Name...' type="text" id="author" />
+						<input className='ml-4 w-2/3 rounded-full shadow-lg shadow-gray-900 bg-purple-200 ' placeholder='    Enter Author Name...' type="text" id="author" />
 						<br />
 						<label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Git URL: </label>
-						<input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200' placeholder='    Enter Git URL...' type="text" id="gitUrl" />
+						<input className='ml-4 w-2/3 rounded-full shadow-lg shadow-gray-900 bg-purple-200' placeholder='    Enter Git URL...' type="text" id="gitUrl" />
 						<br />
 						<label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Project Stack: </label>
-						<input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200' placeholder='    Enter Project Stack...' type="text" id="projectStack" />
+						<input className='ml-4 w-2/3 rounded-full shadow-lg shadow-gray-900 bg-purple-200' placeholder='    Enter Project Stack...' type="text" id="projectStack" />
 						<br />
 						<label className='inline-block whitespace-nowrap m-1 mb-5 w-24 text-right'> Description: </label>
-						<input className='ml-4 w-2/3 rounded-full shadow-xl shadow-gray-900 bg-purple-200' placeholder='    Enter Description...' type="text" id="description" />
+						<input className='ml-4 w-2/3 rounded-full shadow-lg shadow-gray-900 bg-purple-200' placeholder='    Enter Description...' type="text" id="description" />
 						<br />
 					</form>
 				</div>
