@@ -67,9 +67,7 @@ const Body = () => {
 	return (
 		<div className='bodyOverview flex-col p-3 rounded-xl transition ease-in-out '>
 			<div className='getDiv flex mb-10 mt-3 rounded-xl border-green-800 bg-green-400 p-6 shadow-xl shadow-gray-900'>
-				<button className='getButton transition ease-in-out hover:-translate-y-1 duration-300  text-5xl w-1/2 h-84 text-green-900 shadow-xl
-                shadow-gray-900 rounded-xl font-bold border-green-700
-                bg-green-200 cursor-pointer hover:bg-green-300'
+				<button className='getButton transition ease-in-out hover:-translate-y-1 duration-300  text-5xl w-1/2 h-84 text-green-900 shadow-xl shadow-gray-900 rounded-xl font-bold border-green-700 bg-green-200 cursor-pointer hover:bg-green-300'
 					onClick={fetchDataGet}> Get Projects </button>
 				<div className='dataItems w-1/2 h-80 text-5xl overflow-y-auto bg-green-700 rounded-xl ml-4 '>
 					<div className='flex justify-center jsonHolder'>
@@ -79,10 +77,7 @@ const Body = () => {
 			</div>
 			<div className='postDiv flex mb-10 shadow-xl shadow-gray-900 mt-3 bg-purple-400 rounded-xl border-purple-700 text-purple-900 p-6'>
 				<div className='buttonHolder w-1/2'>
-					<button type="submit" form="postForm" className='postButton transition ease-in-out hover:-translate-y-1 duration-300
-                w-full h-80 text-5xl shadow-xl shadow-gray-900 font-bold  rounded-xl bg-purple-200
-                text-purple-900 border-purple-800 hover:bg-purple-300
-                cursor-pointer' > Post Project </button>
+					<button type="submit" form="postForm" className='postButton transition ease-in-out hover:-translate-y-1 duration-300 w-full h-80 text-5xl shadow-xl shadow-gray-900 font-bold  rounded-xl bg-purple-200 text-purple-900 border-purple-800 hover:bg-purple-300 cursor-pointer' > Post Project </button>
 				</div>
 				<div className='formContainer block text-center w-1/2 h-80 overflow-y-auto'>
 					<form id="postForm" className='formClass pt-6 pl-5 w-full' onSubmit={fetchDataPost}>
@@ -108,21 +103,14 @@ const Body = () => {
 				</div>
 			</div>
 			<div className='deletDivSpecific shadow-xl shadow-gray-900 flex mt-3 mb-10 rounded-xl blue-900 bg-blue-400 p-6'>
-				<button className='deleteButtonSpecific transition ease-in-out hover:-translate-y-1 duration-300  shadow-xl
-                shadow-gray-900 rounded-xl font-bold border-blue-800
-                bg-blue-200 hover:bg-blue-300 text-blue-900 cursor-pointer
-                w-1/2 h-80 text-5xl' onClick={() => fetchDataDelete(parseInt((document.getElementById("idNumber") as HTMLInputElement).value))}>
-					Delete Project By ID </button>
+				<button className='deleteButtonSpecific transition ease-in-out hover:-translate-y-1 duration-300  shadow-xl shadow-gray-900 rounded-xl font-bold border-blue-800 bg-blue-200 hover:bg-blue-300 text-blue-900 cursor-pointer w-1/2 h-80 text-5xl' onClick={() => fetchDataDelete(parseInt((document.getElementById("idNumber") as HTMLInputElement).value))}> Delete Project By ID </button>
 				<div className='flex w-1/2 items-center justify-center'>
 					<label className='text-blue-900 text-3xl'> Project ID: </label>
 					<input placeholder='0' type="number" id="idNumber" className='ml-4 pl-3 w-16 text-center rounded-md shadow-xl shadow-gray-900 bg-blue-100 text-5xl' />
 				</div>
 			</div>
 			<div className='deleteDiv flex shadow-xl shadow-gray-900 rounded-xl mb-10 p-6 bg-pink-400 mt-3 border-pink-900'>
-				<button className='deleteButton transition ease-in-out hover:-translate-y-1 duration-300 w-full h-80 text-5xl rounded-xl shadow-xl
-                shadow-gray-900 border-pink-900 font-bold bg-pink-200
-                hover:bg-pink-300 text-pink-900 cursor-pointer' onClick={() => fetchDataDelete(0)}> Delete Last Project </button>
-			</div>
+				<button className='deleteButton transition ease-in-out hover:-translate-y-1 duration-300 w-full h-80 text-5xl rounded-xl shadow-xl shadow-gray-900 border-pink-900 font-bold bg-pink-200 hover:bg-pink-300 text-pink-900 cursor-pointer' onClick={() => fetchDataDelete(0)}> Delete Last Project </button> </div>
 		</div >
 	);
 }
