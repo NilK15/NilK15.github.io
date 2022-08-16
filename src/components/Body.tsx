@@ -10,14 +10,14 @@ const Body = () => {
 		try {
 			const { data: response } = await axios.get('/api/projects');
 			setData(response);
-		} catch (error) {
+		} catch (error: any) {
 			setError(error.message);
 		} finally {
 			setLoaded(true);
 		}
 	}
 
-	const fetchDataPost = async (event) => {
+	const fetchDataPost = async (event: any ) => {
 		event.preventDefault();
 		const projectName = (document.getElementById("projectName") as HTMLInputElement).value;
 		const manager = (document.getElementById("manager") as HTMLInputElement).value;
@@ -27,6 +27,7 @@ const Body = () => {
 		const description = (document.getElementById("description") as HTMLInputElement).value;
 
 		try {
+			// WHAT THE FUCk Is This? AND I CANT TYPE A CAPITAL k???
 			const { data: response } = await axios.post('/api/projects', {
 				projectName: projectName,
 				manager: manager,
@@ -38,7 +39,7 @@ const Body = () => {
 			setData(response);
 			setTimeout(fetchDataGet, 1500);
 
-		} catch (error) {
+		} catch (error: any) {
 			setError(error.message);
 			console.log(error.message);
 		} finally {
@@ -46,7 +47,7 @@ const Body = () => {
 		}
 	}
 
-	const fetchDataDelete = async (id = 0) => {
+	const fetchDataDelete = async (id: number = 0) => {
 		try {
 			if (id == 0) {
 				const { data: response } = await axios.delete('/api/projects');
@@ -58,7 +59,7 @@ const Body = () => {
 				setData(response);
 				setTimeout(fetchDataGet, 1500);
 			}
-		} catch (error) {
+		} catch (error: any) {
 			setError(error.message);
 		} finally {
 			setLoaded(true);
