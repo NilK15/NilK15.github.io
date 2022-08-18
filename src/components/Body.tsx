@@ -17,8 +17,11 @@ const Body = () => {
 		}
 	}
 
-	const fetchDataPost = async (event: any ) => {
+	// Reads the input fields in postDiv form, and when button to post project is pressed,
+	// it sends the info to the backend via post
+	const fetchDataPost = async (event: any) => {
 		event.preventDefault();
+		// Gets the values from the input fields in the form
 		const projectName = (document.getElementById("projectName") as HTMLInputElement).value;
 		const manager = (document.getElementById("manager") as HTMLInputElement).value;
 		const author = (document.getElementById("author") as HTMLInputElement).value;
@@ -28,6 +31,7 @@ const Body = () => {
 
 		try {
 			// WHAT THE FUCk Is This? AND I CANT TYPE A CAPITAL k???
+			// axios sending key/value response (Keys provided by "API", value is derived input fields above)
 			const { data: response } = await axios.post('/api/projects', {
 				projectName: projectName,
 				manager: manager,
