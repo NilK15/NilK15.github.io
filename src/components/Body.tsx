@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import IProject from './types/IProject';
 
 const Body = () => {
 	const [data, setData] = useState([]);
@@ -22,24 +23,18 @@ const Body = () => {
 	const fetchDataPost = async (event: any) => {
 		event.preventDefault();
 		// Gets the values from the input fields in the form
-		const projectName = (document.getElementById("projectName") as HTMLInputElement).value;
-		const manager = (document.getElementById("manager") as HTMLInputElement).value;
-		const author = (document.getElementById("author") as HTMLInputElement).value;
-		const gitUrl = (document.getElementById("gitUrl") as HTMLInputElement).value;
-		const projectStack = (document.getElementById("projectStack") as HTMLInputElement).value;
-		const description = (document.getElementById("description") as HTMLInputElement).value;
-
+		let projectObject: IProject = {
+			projectName: (document.getElementById("projectName") as HTMLInputElement).value,
+			manager: (document.getElementById("manager") as HTMLInputElement).value,
+			author: (document.getElementById("author") as HTMLInputElement).value,
+			gitUrl: (document.getElementById("gitUrl") as HTMLInputElement).value,
+			projectStack: (document.getElementById("projectStack") as HTMLInputElement).value,
+			description: (document.getElementById("description") as HTMLInputElement).value
+		}
 		try {
-			// WHAT THE FUCk Is This? AND I CANT TYPE A CAPITAL k???
 			// axios sending key/value response (Keys provided by "API", value is derived input fields above)
-			const { data: response } = await axios.post('/api/projects', {
-				projectName: projectName,
-				manager: manager,
-				author: author,
-				gitUrl: gitUrl,
-				projectStack: projectStack,
-				description: description
-			});
+			// data is destrucutred from axios's response and the data variable is renamed to response due to data already being defined above
+			const { data: response } = await axios.post('/api/projects', projectObject);
 			setData(response);
 			setTimeout(fetchDataGet, 1500);
 
