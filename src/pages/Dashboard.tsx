@@ -5,12 +5,12 @@ import {ProjectCard} from '../components/ProjectCard';
 
 const url = "https://github.com/NilK15/projectmanagement-frontend/tree/a98563357df9ce4743e8b813984c18028be368f7/src"
 const sampleProject: IProject = {
-    projectName: "sampleName",
-    manager: "sampleManager",
-    author: "sampleAuther",
+    projectName: "Project Management - Front-End",
+    manager: "Nil",
+    author: "Nil",
     gitUrl: url,
-    projectStack: "projectStack",
-    description: "description"
+    projectStack: "React, Express, Axios",
+    description: "Presentable UI to see an overview for projects as well as direct links to them"
 }
 let projectArray: IProject[] = [];
 projectArray.push(sampleProject)
