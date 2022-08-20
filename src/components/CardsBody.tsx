@@ -2,21 +2,32 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import IProject from '../types/IProject';
 
-const Body = () => {
+
+
+const CardsBody = () => {
 	const [data, setData] = useState([]);
 	const [loaded, setLoaded] = useState(false);
 	const [error, setError] = useState("");
 
 	const fetchDataGet = async () => {
 		try {
-			const { data: response } = await axios.get('/api/projects');
+			const { data: response } = await axios.get<IProject []>('/api/projects');
 			setData(response);
+
+            // for each project in response, create card
+            response.forEach((project) => {
+                console.log(project)
+                
+            });
+                
+
 		} catch (error: any) {
 			setError(error.message);
 		} finally {
+            }
 			setLoaded(true);
 		}
-	}
+	
 
 	// Reads the input fields in postDiv form, and when button to post project is pressed,
 	// it sends the info to the backend via post
@@ -114,4 +125,4 @@ const Body = () => {
 		</div >
 	);
 }
-export default Body;
+export default CardsBody;
