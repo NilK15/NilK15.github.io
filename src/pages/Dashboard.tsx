@@ -4,27 +4,18 @@ import IProject from '../types/IProject';
 import {ProjectCard} from '../components/ProjectCard';
 import { stdout } from 'process';
 
-const url = "https://github.com/NilK15/projectmanagement-frontend/tree/a98563357df9ce4743e8b813984c18028be368f7/src"
-
+// Sample Project Object
 const sampleProject: IProject = {
     projectName: "Project Management - Front-End",
     manager: "Nil",
     author: "Nil",
-    gitUrl: url,
+    gitUrl:  "https://github.com/NilK15/projectmanagement-frontend/tree/a98563357df9ce4743e8b813984c18028be368f7/src",
     projectStack: "React, Express, Axios",
     description: "Presentable UI to see an overview for projects as well as direct links to them"
 }
 
+// Array of Project objects
 let projectArray: IProject[] = [];
-projectArray.push(sampleProject)
-// projectArray.push(sampleProject)
-// projectArray.push(sampleProject)
-// projectArray.push(sampleProject)
-// projectArray.push(sampleProject)
-
-let array:any[] = [];
-
-
 
 const Dashboard = () => {
 	const [data, setData] = useState([]);
@@ -43,10 +34,11 @@ const Dashboard = () => {
 			console.log(error)
 		}
 	}
-
-	getProjectsOnLoad();
-
+	
 	useEffect(()=>{
+
+	// Loads the projects from SQL lite using Axios GET call to projectArray
+	getProjectsOnLoad();
 
 	},[projectArray])
 
