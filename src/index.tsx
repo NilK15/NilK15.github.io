@@ -8,9 +8,11 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    <React.StrictMode>
+    // Replace div with React.strict as that was what was initially here.
+   // Removed bc of double logs showing in console.log()
+    <div>
         <App />
-    </React.StrictMode>
+    </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
