@@ -76,7 +76,7 @@ const CardsBody = () => {
 		}
 	}
 	return (
-		<div className='bodyOverview flex-col p-3 rounded-xl transition ease-in-out '>
+		<div className='bodyOverview h-screen flex-col p-3 rounded-xl transition ease-in-out '>
 			<div className='getDiv flex mb-10 mt-3 rounded-xl border-green-800 bg-green-400 p-6 shadow-xl shadow-gray-900'>
 				<button className='getButton transition ease-in-out hover:-translate-y-1 duration-300  text-5xl w-1/2 h-84 text-green-900 shadow-xl shadow-gray-900 rounded-xl font-bold border-green-700 bg-green-200 cursor-pointer hover:bg-green-300'
 					onClick={fetchDataGet}> Get Projects </button>

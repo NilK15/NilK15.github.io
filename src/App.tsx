@@ -3,7 +3,7 @@ import Dashboard from './pages/Dashboard';
 
 function App() {
     return (
-        <div className='bg-teal-100'>
+        <div className=' appDiv'>
             <Header />
             <Dashboard />
         </div>
