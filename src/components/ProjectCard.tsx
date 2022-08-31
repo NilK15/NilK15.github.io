@@ -9,7 +9,7 @@ export const ProjectCard = (props: IProject) => {
 
                 <div className="flex-col w-full h-full">
 
-                    <div className="flex h-1/2 items-center justify-center px-2 text-sm ">
+                    <div className="flex h-1/2 items-center justify-center px-2 ">
                         <div className="flex-col">
                             <div className="p-5" >Project Name: {props.projectName}</div>
                             <div className="p-5" >Project Contributors: {props.author}</div>
@@ -18,8 +18,8 @@ export const ProjectCard = (props: IProject) => {
 
                     </div>
                     <div className=" h-full pl-2 overflow-auto whitespace-normal bg-slate-400 italic text-white rounded-xl shadow-xl shadow-slate-800 border border-slate-900">
-                        <label className="label pl-2 text-sm">Brief Description:</label>
-                        <div className="pl-10 pt-2">{props.description}</div>
+                        <label className="label pl-2">Brief Description:</label>
+                        <div className="pl-10 pt-2 text-4xl">{props.description}</div>
                     </div>
 
 
