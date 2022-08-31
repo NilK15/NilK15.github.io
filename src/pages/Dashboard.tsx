@@ -52,8 +52,8 @@ const Dashboard = () => {
 	},[projectArray])
 
 	return (
-		<div className='projectCardContainer flex h-full'>
-			<div className='projectCards flex justify-around gap-5 w-full flex-wrap'>
+		<div className='projectCardContainer flex h-screen w-full'>
+			<div className='projectCards flex mx-10 lg:mx-0 gap-5 lg:h-3/4 w-full justify-around flex-wrap'>
 			{ data.map((item,index)=> {return ProjectCard(item)})}
 			</div>
 		</div>
