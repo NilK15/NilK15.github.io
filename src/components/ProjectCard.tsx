@@ -13,7 +13,7 @@ export const ProjectCard = (props: IProject) => {
                             <div className="p-5" >Project Stack: {props.projectStack}</div>
                         </div>
                     </div>
-                    <div className="ProjectDescription text-brown-900 h-1/3 mt-28 mx-4 whitespace-normal bg-orange-300 italic rounded-xl shadow-lg shadow-slate-800 border border-slate-900">
+                    <div className="ProjectDescription text-brown-900 h-1/3 mt-24 mx-4 whitespace-normal bg-orange-300 italic rounded-xl shadow-lg shadow-slate-800 border border-slate-900">
                         <label className="label pl-2">Brief Description:</label>
                         <div className=" text-brown-900 pl-10 pt-2 text-4xl">{props.description}</div>
                     </div>
