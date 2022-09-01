@@ -53,7 +53,7 @@ const Dashboard = () => {
 
 	return (
 		<div className='DashboardContainer flex h-screen'>
-			<div className=' flex flex-wrap justify-evenly h-5/6 gap-5'>
+			<div className=' flex flex-wrap w-full justify-evenly h-5/6 gap-5'>
 			{ data.map((item,index)=> {return ProjectCard(item)})}
 			</div>
 		</div>
