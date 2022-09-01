@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(
 root.render(
     // Replace div with React.strict as that was what was initially here.
    // Removed bc of double logs showing in console.log()
-    <div className='RootRender h-screen '>
+    <div className='RootRender '>
         <App />
     </div>
 );
