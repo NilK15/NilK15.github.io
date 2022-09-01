@@ -20,7 +20,6 @@ projectArray.push(sampleProject)
 // projectArray.push(sampleProject)
 // projectArray.push(sampleProject)
 // projectArray.push(sampleProject)
-// projectArray.push(sampleProject)
 
 let array:any[] = [];
 
