@@ -7,20 +7,20 @@ export const ProjectCard = (props: IProject) => {
                 <div className="ProjectInfoDescContainer flex flex-col w-full " >
                     <div className="ProjectInformation flex flex-col text-3xl font-serif h-full items-center justify-around px-2 text-brown-300 ">
                         <div className="ProjectDescription flex flex-col w-full h-1/5 text-lg italic hover:-translate-y-2 duration-200 font-serif text-brown-900 mx-2 whitespace-normal bg-orange-100 rounded-xl shadow-md shadow-slate-800 border border-slate-900">
-                            <label className="label pl-2 ">Project Name:</label>
-                            <div className="p-5" >{props.projectName}</div>
+                            <label className="label pl-2 mt-5 ml-5 font-bold ">Project Name:</label>
+                            <div className="p-5 text-4xl text-center" >{props.projectName}</div>
                         </div>
                         <div className="ProjectDescription flex flex-col w-full h-1/5 text-lg italic hover:-translate-y-2 duration-200 font-serif text-brown-900 mx-2 whitespace-normal bg-orange-200 rounded-xl shadow-md shadow-slate-800 border border-slate-900">
-                            <label className="label pl-2">Project Contributors:</label>
-                            <div className="p-5" >{props.author}</div>
+                            <label className="label pl-2 font-bold mt-5 ml-5 ">Project Contributors:</label>
+                            <div className="p-5 text-center text-4xl" >{props.author}</div>
                         </div>
                         <div className="ProjectDescription flex flex-col w-full h-1/5 text-lg italic hover:-translate-y-2 duration-200 font-serif text-brown-900 mx-2 whitespace-normal bg-orange-300 rounded-xl shadow-md shadow-slate-800 border border-slate-900">
-                            <label className="label pl-2">Project Stack:</label>
-                            <div className="p-5" >{props.projectStack}</div>
+                            <label className="label pl-2 font-bold mt-5 ml-5 ">Project Stack:</label>
+                            <div className="p-5 text-center text-4xl mt-5 ml-5 " >{props.projectStack}</div>
                         </div>
                         <div className="ProjectDescription flex flex-col w-full h-1/5 text-lg italic hover:-translate-y-2 duration-200 font-serif text-brown-900 mx-2 whitespace-normal bg-orange-400 rounded-xl shadow-md shadow-slate-800 border border-slate-900">
-                            <label className="label pl-2">Brief Description:</label>
-                            <div className=" text-brown-900 p-5 pt-2 text-xl">{props.description}</div>
+                            <label className="label pl-2 font-bold mt-5 ml-5 ">Brief Description:</label>
+                            <div className=" text-brown-900 p-5 pt-2 text-4xl text-center">{props.description}</div>
                         </div>
                     </div>
                 </div>
