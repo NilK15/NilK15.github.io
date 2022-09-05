@@ -4,14 +4,14 @@ import { ImportsNotUsedAsValues } from "typescript";
 const Profile = () => {
 
     return(
-        <div className="flex h-screen bg-dark-picture bg-center bg-fixed justify-center ">
+        <div className="flex h-screen bg-darkest bg-center bg-fixed justify-center ">
             <div className="flex flex-col relative h-full ">
-                <div className="HoverGroupContainer group mt-48">
-                    <div className="HiBackground absolute h-14 w-full blur-md group-hover:blur-lg bg-gradient-to-br from-purple-400 to-blue-700 justify-center items-center">
+                <div className="HoverGroupContainer group mt-72">
+                    <div className="HiBackground absolute h-14 w-full blur-md group-hover:blur-2xl duration-500 bg-gradient-to-br from-purple-400 to-blue-700 justify-center items-center">
                     </div>
-                    <div className=" Hi h-14 flex shadow-lg shadow-slate-900 font-serif text-xl rounded-xl divide-x divide-gray-600 justify-center items-center relative bg-black text-slate-300  text-center ">
-                        <p className="p-3 text-3xl"> Welcome to my Portfolio </p>
-                        <p className="px-2 text-blue-400"> Sunil Khatri</p>
+                    <div className=" Hi h-14 flex shadow-lg shadow-slate-900 font-serif text-xl rounded-xl divide-x divide-gray-600 justify-center items-center relative bg-black text-slate-300 text-center ">
+                        <p className="p-3 text-3xl"> Welcome To My Portfolio </p>
+                        <p className="px-2 text-blue-400 group-hover:text-purple-400 duration-1000"> Sunil Khatri</p>
                     </div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className=" self-center animate-bounce text-white w-10 h-10 absolute bottom-0">
