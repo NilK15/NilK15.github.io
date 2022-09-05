@@ -4,13 +4,14 @@ import IProject from '../types/IProject';
 import {ProjectCard} from '../components/ProjectCard';
 import { stdout } from 'process';
 
-const url = "https://github.com/NilK15/projectmanagement-frontend/tree/a98563357df9ce4743e8b813984c18028be368f7/src"
+const frontEndUrl = "https://github.com/NilK15/projectmanagement-frontend"
+const backEndUrl = "https://github.com/NilK15/projectmanagement-backend"
 
 const sampleProject: IProject = {
     projectName: "Project Management - Front-End",
     manager: "Nil",
     author: "Nil, Clint",
-    gitUrl: url,
+    gitUrl: frontEndUrl,
     projectStack: "TypeScript, React, Axios",
     description: "Presentable UI to see an overview for projects as well as direct links to them"
 }
@@ -19,7 +20,7 @@ const sampleProject2: IProject = {
     projectName: "Project Management - Back-End",
     manager: "Nil",
     author: "Nil, Clint",
-    gitUrl: url,
+    gitUrl: backEndUrl,
     projectStack: "JavaScript, NodeJS, ExpressJS, Axios",
     description: "Presentable UI to see an overview for projects as well as direct links to them"
 }
