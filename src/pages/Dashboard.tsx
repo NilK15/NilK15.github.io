@@ -9,17 +9,23 @@ const url = "https://github.com/NilK15/projectmanagement-frontend/tree/a98563357
 const sampleProject: IProject = {
     projectName: "Project Management - Front-End",
     manager: "Nil",
-    author: "Nil",
+    author: "Nil, Clint",
     gitUrl: url,
-    projectStack: "React, Express, Axios",
+    projectStack: "TypeScript, React, Axios",
     description: "Presentable UI to see an overview for projects as well as direct links to them"
 }
 
+const sampleProject2: IProject = {
+    projectName: "Project Management - Back-End",
+    manager: "Nil",
+    author: "Nil, Clint",
+    gitUrl: url,
+    projectStack: "JavaScript, NodeJS, ExpressJS, Axios",
+    description: "Presentable UI to see an overview for projects as well as direct links to them"
+}
 let projectArray: IProject[] = [];
 projectArray.push(sampleProject)
-// projectArray.push(sampleProject)
-// projectArray.push(sampleProject)
-// projectArray.push(sampleProject)
+projectArray.push(sampleProject2)
 
 let array:any[] = [];
 
