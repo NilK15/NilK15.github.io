@@ -24,43 +24,40 @@ const sampleProject2: IProject = {
     projectStack: "JavaScript, NodeJS, ExpressJS, Axios",
     description: "Presentable UI to see an overview for projects as well as direct links to them"
 }
+
 let projectArray: IProject[] = [];
 projectArray.push(sampleProject)
 projectArray.push(sampleProject2)
-
-let array:any[] = [];
-
-
 
 const Dashboard = () => {
 	const [data, setData] = useState([]);
 	const [loaded, setLoaded] = useState(false);
 	const [error, setError] = useState("");
 
-	const getProjectsOnLoad = async () => {
+	// const getProjectsOnLoad = async () => {
 
-		try {
-			const {data: response} = await axios.get('api/projects');
-			response.forEach(project => {
-				projectArray.push(project);
-			});
-			setData(projectArray)
-		} catch (error) {
-			console.log(error)
-		}
-	}
+	// 	try {
+	// 		const {data: response} = await axios.get('api/projects');
+	// 		response.forEach(project => {
+	// 			projectArray.push(project);
+	// 		});
+	// 		setData(projectArray)
+	// 	} catch (error) {
+	// 		console.log(error)
+	// 	}
+	// }
 	
-	useEffect(()=>{
+	// useEffect(()=>{
 
-	// Loads the projects from SQL lite using Axios GET call to projectArray
-	getProjectsOnLoad();
+	// // Loads the projects from SQL lite using Axios GET call to projectArray
+	// getProjectsOnLoad();
 
-	},[projectArray])
+	// },[projectArray])
 
 	return (
 		<div className='DashboardContainer flex h-screen'>
 			<div className=' flex flex-wrap w-full justify-evenly h-5/6 gap-5'>
-			{ data.map((item,index)=> {return ProjectCard(item)})}
+			{ projectArray.map((item,index)=> {return ProjectCard(item)})}
 			</div>
 		</div>
 	);
