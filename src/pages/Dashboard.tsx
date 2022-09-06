@@ -40,7 +40,7 @@ const portfolio: IProject = {
     author: "Sunil",
     gitUrl: [portfolioUrl, portfolioContributors, portfolioDescription],
     projectStack: "TypeScript, React, Tailwindcss",
-    description: "Presentable UI to see an overview for projects as well as direct links to them"
+    description: "Shows various projects for public viewing as well as some info about me"
 }
 
 let projectArray: IProject[] = [];
