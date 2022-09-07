@@ -4,8 +4,8 @@ import { ImportsNotUsedAsValues } from "typescript";
 const Profile = () => {
 
     return(
-        <div className="flex h-screen bg-darkest bg-center bg-fixed  ">
-            <div className="flex flex-col relative justify-between w-full h-full ">
+        <div className="flex h-screen bg-darkest bg-center bg-fixed">
+            <div className="flex flex-col relative justify-between w-full h-full gap-10 ">
                 <div className="flex w-full ml-14 ">
                 <div className="HoverGroupContainer flex flex-col w-96 group mt-20 ">
                     <div className=" flex flex-col w-96 h-24 ">
