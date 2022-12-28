@@ -1,2 +1,1 @@
-# My portfolio website showcasing various projects that are available for public viewing.
-
+# My portfolio website showcasing some GitHub hosted applications and other projects.
