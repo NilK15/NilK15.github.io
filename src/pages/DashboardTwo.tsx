@@ -32,9 +32,9 @@ projectArray.push(youtubeProject);
 
 const Dashboard = () => {
   return (
-    <div className="DashboardDiv flex flex-col items-center w-full h-96">
+    <div className="DashboardDiv flex flex-col overflow-scroll scrollbar-hide items-center w-full h-96">
       <div className="DashboardContainer max-w-screen-2xl flex">
-        <div className="gridContainer grid grid-cols-2 w-full gap-10">
+        <div className="gridContainer grid grid-cols-1  md:grid-cols-2 lg:grid-cols-2 w-full gap-10">
           {projectArray.map((item, index) => {
             return ProjectCardTwo(item);
           })}
