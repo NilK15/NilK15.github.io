@@ -2,54 +2,47 @@ import IProject from "../types/IProject";
 
 export const ProjectCard = (props: IProject) => {
   return (
-    // <div
-    //   className="ProjectCard flex w-full h-full mx-5 lg:m-0 lg:w-5/12 lg:h-full hover:-translate-y-2 duration-200 hover:bg-orange-800 hover:border-2 hover:border-orange-200  border-black bg-orange-900  rounded-xl shadow-xl shadow-slate-900 overflow-hidden cursor-pointer whitespace-nowrap text-xl"
-    //   onClick={() => {
-    //     window.open(props.gitUrl[0]);
-    //   }}
     <div
-      className="ProjectCard flex mx-5 hover:-translate-y-2 duration-200 hover:bg-orange-800 hover:border-2 hover:border-orange-200  border-black bg-orange-900  rounded-xl shadow-xl shadow-slate-900 overflow-hidden cursor-pointer whitespace-nowrap text-xl"
+      className="ProjectCard flex mx-5 hover:-translate-y-2 duration-200 h-72 bg-purple-400 border-2 border-neon-blue  rounded-xl  overflow-hidden cursor-pointer whitespace-nowrap text-xl"
       onClick={() => {
         window.open(props.gitUrl[0]);
       }}
     >
-      <div className="ProjectInfoDescContainer flex flex-col w-full justify-center ">
-        <div className="ProjectInformation w-full flex flex-col text-xl font-serif items-center justify-around px-2 text-brown-300 ">
-          <div className="ProjectDescription flex flex-col w-full text-sm italic hover:-translate-y-2 duration-200 font-serif text-brown-900 mx-2 whitespace-normal bg-orange-100 rounded-xl shadow-md shadow-slate-800 border border-slate-900">
-            <label className="label pl-2 mt-2 ml-5 font-bold ">
+      <div className="ProjectInfoDescContainer flex flex-col w-full justify-center cursor-pointer ">
+        <div className="ProjectInformation w-full flex flex-col font-serif items-center justify-around px-2 text-white ">
+          <div className="ProjectDescription flex flex-col w-full text-sm italic hover:opacity-80 duration-200 font-serif text-white mx-2 whitespace-normal bg-neon-darkblue rounded-xl shadow-md shadow-slate-800 border border-neon-teal">
+            <label className="label pl-2 mt-2 ml-5 cursor-pointer ">
               Project Name:
             </label>
-            <div className="p-5 text-lg text-center">{props.projectName}</div>
+            <div className=" mb-2 text-center cursor-pointer">
+              {props.projectName}
+            </div>
           </div>
           <div
-            className="ProjectContributors flex flex-col w-full text-sm italic hover:-translate-y-2 duration-200 font-serif text-brown-900 mx-2 whitespace-normal bg-orange-200 rounded-xl shadow-md shadow-slate-800 border border-slate-900"
+            className="ProjectContributors flex flex-col w-full text-sm italic hover:opacity-80 duration-200 font-serif text-white mx-2 whitespace-normal bg-neon-darkblue rounded-xl shadow-md shadow-slate-800 border border-neon-teal"
             onClick={() => {
               window.open(props.gitUrl[1]);
             }}
           >
-            <label className="label pl-2 font-bold mt-2 ml-5 ">
+            <label className="label pl-2 font mt-2 ml-5 ">
               Project Contributors:
             </label>
-            <div className="p-5 text-center text-lg ">{props.author}</div>
+            <div className=" text-center mb-2 ">{props.author}</div>
           </div>
-          <div className="ProjectStack flex flex-col w-full text-sm italic hover:-translate-y-2 duration-200 font-serif text-brown-900 mx-2 whitespace-normal bg-orange-300 rounded-xl shadow-md shadow-slate-800 border border-slate-900">
-            <label className="label pl-2 font-bold mt-2 ml-5 ">
-              Project Stack:
-            </label>
-            <div className="p-5 text-center text-lg ml-5 ">
-              {props.projectStack}
-            </div>
+          <div className="ProjectStack flex flex-col w-full text-sm italic hover:opacity-80 duration-200 font-serif text-white mx-2 whitespace-normal bg-neon-darkblue rounded-xl shadow-md shadow-slate-800 border border-neon-teal">
+            <label className="label pl-2 font mt-2 ml-5 ">Project Stack:</label>
+            <div className=" text-center ml-5 mb-2 ">{props.projectStack}</div>
           </div>
           <div
-            className="ProjectDescription flex flex-col w-full text-sm italic hover:-translate-y-2 duration-200 font-serif text-brown-900 mx-2 whitespace-normal bg-orange-400 rounded-xl shadow-md shadow-slate-800 border border-slate-900"
+            className="ProjectDescription flex flex-col w-full text-sm italic hover:opacity-80 duration-200 font-serif text-white mx-2 whitespace-normal bg-neon-darkblue rounded-xl shadow-md shadow-slate-800 border border-neon-teal"
             onClick={() => {
               window.open(props.gitUrl[2]);
             }}
           >
-            <label className="label pl-2 font-bold mt-2 ml-5 ">
+            <label className="label pl-2 font mt-2 ml-5 ">
               Brief Description:
             </label>
-            <div className=" text-brown-900 p-5 pt-2 text-lg mb-4 r">
+            <div className=" text-white text-center p-2 pt-2 mb-2 r">
               {props.description}
             </div>
           </div>

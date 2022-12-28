@@ -23,8 +23,8 @@ const portfolioDescription = "https://github.com/NilK15/portfolio#readme";
 
 const frontEndProject: IProject = {
   projectName: "Project Management - Front-End",
-  manager: "Sunil",
-  author: "Sunil",
+  manager: "Sunil Khatri",
+  author: "Sunil Khatri",
   gitUrl: [frontEndUrl, frontendContributors, frontendDescription],
   projectStack: "TypeScript, React, Tailwindcss, Axios",
   description: "UI to interact with the database holding projects",
@@ -32,22 +32,20 @@ const frontEndProject: IProject = {
 
 const backEndProject: IProject = {
   projectName: "Project Management - Back-End",
-  manager: "Sunil",
-  author: "Sunil",
+  manager: "Sunil Khatri",
+  author: "Sunil Khatri",
   gitUrl: [backEndUrl, backEndContributors, backEndDescription],
-  projectStack: "JavaScript, NodeJS, ExpressJS, Axios",
-  description:
-    "Back-end consisting of endpoints to provide info to the front-end UI",
+  projectStack: "JavaScript, NodeJS, ExpressJS",
+  description: "Back-end routing endpoints for front-end UI",
 };
 
 const portfolio: IProject = {
   projectName: "Portfolio Website",
-  manager: "Sunil",
-  author: "Sunil",
+  manager: "Sunil Khatri",
+  author: "Sunil Khatri",
   gitUrl: [portfolioUrl, portfolioContributors, portfolioDescription],
   projectStack: "TypeScript, React, Tailwindcss",
-  description:
-    "Shows various projects for public viewing as well as some info about me",
+  description: "My personal portfolio",
 };
 
 let projectArray: IProject[] = [];
@@ -57,9 +55,9 @@ projectArray.push(portfolio);
 
 const Dashboard = () => {
   return (
-    <div className="DashboardDiv flex justify-center w-full">
+    <div className="DashboardDiv flex flex-col items-center w-full">
       <div className="DashboardContainer max-w-screen-2xl flex">
-        <div className=" grid grid-cols-3 w-full gap-5">
+        <div className="gridContainer grid grid-cols-3 w-full gap-10">
           {projectArray.map((item, index) => {
             return ProjectCard(item);
           })}
