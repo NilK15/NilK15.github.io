@@ -1,3 +1,5 @@
+const { readBuilderProgram } = require("typescript");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
@@ -31,6 +33,9 @@ module.exports = {
           teal: "#59eafd",
           blue: "#5b9ec8",
           darkblue: "#070f22",
+        },
+        myblack: {
+          gray: "#282828",
         },
       },
     },

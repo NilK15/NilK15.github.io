@@ -15,7 +15,7 @@ export const ProjectCardTwo = (props: IProject) => {
               {props.projectName}
             </div>
           </div>
-          <div className="ProjectDescription flex flex-col w-full text-sm hover:text-purple-400 duration-200 font-serif text-white  mx-2 whitespace-normal bg-black rounded-xl shadow-md shadow-neon-teal border border-neon-aqua">
+          <div className="ProjectDescription flex flex-col w-full text-sm hover:text-purple-400 duration-200 font-serif text-white  mx-2 whitespace-normal bg-myblack-gray rounded-xl shadow-md shadow-neon-teal border border-neon-aqua">
             <label className="text-slate-300 label pl-2 font mt-2 ml-5 ">
               Project Contributors:
             </label>

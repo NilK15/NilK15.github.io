@@ -9,7 +9,7 @@ const apiURL = "http://nilk15.github.io/react-multi-api-fetcher";
 const youtubeURL = "http://nilk15.github.io/youtube-design-html-css-only";
 
 const apiProject: IProject = {
-  projectName: "Multi API Fetcher (Pokemon, Dogs, Nasa)",
+  projectName: "Multi API Fetcher",
   manager: "Sunil Khatri",
   author: "Sunil Khatri",
   gitUrl: [apiURL, apiURL, apiURL],
