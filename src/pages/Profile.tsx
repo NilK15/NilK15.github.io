@@ -3,7 +3,7 @@ import { ImportsNotUsedAsValues } from "typescript";
 
 const Profile = () => {
   return (
-    <div className="flex h-screen bg-mountain bg-center bg-cover">
+    <div className="flex h-screen bg-mountain bg-center bg-cover pb-16">
       <div className="flex flex-col relative items-center w-full h-full gap-32 ">
         <div className="flex w-full justify-center sm:justify-center md:justify-start lg:justify-start ">
           <div className="HoverGroupContainer flex flex-col w-96 group mt-20 ">
