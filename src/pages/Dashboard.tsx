@@ -27,7 +27,7 @@ const frontEndProject: IProject = {
   author: "Sunil Khatri",
   gitUrl: [frontEndUrl, frontendContributors, frontendDescription],
   projectStack: "TypeScript, React, Tailwindcss, Axios",
-  description: "UI to interact with the database holding projects",
+  description: "An application that consumes a Pokemon, dog, and NASA API.",
 };
 
 const backEndProject: IProject = {
@@ -55,9 +55,9 @@ projectArray.push(portfolio);
 
 const Dashboard = () => {
   return (
-    <div className="DashboardDiv flex flex-col overflow-scroll scrollbar-hide h-96 items-center w-full">
-      <div className="DashboardContainer max-w-screen-2xl flex">
-        <div className="gridContainer grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-full gap-10">
+    <div className="DashboardDiv flex flex-col overflow-scroll scrollbar-hide pt-4 pb-12 h-96 items-center w-full">
+      <div className="DashboardContainer max-w-screen-2xl md:w-full lg:w-full flex">
+        <div className="gridContainer grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-10">
           {projectArray.map((item, index) => {
             return ProjectCard(item);
           })}
