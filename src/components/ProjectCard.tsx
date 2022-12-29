@@ -3,7 +3,7 @@ import IProject from "../types/IProject";
 export const ProjectCard = (props: IProject) => {
   return (
     <div
-      className="ProjectCard flex mx-5 hover:-translate-y-2 hover:shadow-2xl hover:shadow-neon-teal duration-200 h-72 bg-black border-2 border-neon-teal shadow-lg shadow-neon-teal  rounded-xl  overflow-hidden cursor-pointer whitespace-nowrap text-xl"
+      className="ProjectCard flex mx-5 hover:-translate-y-2 md:hover:shadow-2xl lg:hover:shadow-2xl hover:shadow-neon-teal duration-200 h-72 bg-black border-2 border-neon-teal shadow-lg shadow-neon-teal  rounded-xl  overflow-hidden cursor-pointer whitespace-nowrap text-xl"
       onClick={() => {
         window.open(props.gitUrl[0]);
       }}
