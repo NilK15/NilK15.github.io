@@ -31,8 +31,8 @@ const Profile = () => {
         </svg>
         <div className="flex w-full justify-center">
           <div className="HoverGroupContainer relative flex flex-col items-center justify-center group w-3/4 h-96">
-            <div className="HiBackground max-w-3xl absolute w-full h-72 md:h-60 lg:h-60 blur-md group-hover:blur-2xl duration-500 bg-gradient-to-br from-blue-700 to-purple-600 justify-center items-center"></div>
-            <div className=" Hi h-72 md:h-60 lg:h-60 gap-28 max-w-3xl w-full flex flex-col  font-serif text-xl rounded-xl items-center relative bg-black text-slate-300 text-center ">
+            <div className="HiBackground max-w-3xl absolute w-full h-80 md:h-60 lg:h-60 blur-md group-hover:blur-2xl duration-500 bg-gradient-to-br from-blue-700 to-purple-600 justify-center items-center"></div>
+            <div className=" Hi h-80 md:h-60 lg:h-60 gap-28 max-w-3xl w-full flex flex-col  font-serif text-xl rounded-xl items-center relative bg-black text-slate-300 text-center ">
               <div className="flex flex-col ">
                 <div className=" Hi flex w-full h-full mt-4 mb-4 font-serif text-xl rounded-xl divide-x divide-gray-600 justify-center items-center relative bg-black text-slate-300 text-center ">
                   <p className=" text-3xl h-full mr-2">About me</p>
