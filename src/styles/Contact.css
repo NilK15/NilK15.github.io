@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 100vw;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #contactHeader {
@@ -12,6 +12,7 @@
 }
 
 #contactHeader h1 {
+  margin-top: 0;
   text-align: center;
   color: white;
   font-size: 10vw;
@@ -25,13 +26,17 @@
 #contactHeader p {
   text-align: center;
   color: white;
-  font-size: 10vw;
+  font-size: 7vw;
 }
 
 #contactMain {
   display: flex;
   width: 100%;
   justify-content: space-around;
+}
+
+#contactMain p {
+  font-size: 7vw;
 }
 
 #contactMain img {
