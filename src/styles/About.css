@@ -1,0 +1,38 @@
+/* mobile design */
+section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(24, 24, 35);
+  color: white;
+  height: 100vw;
+}
+
+header {
+  margin: 10vw 5vw 0 5vw;
+}
+
+header p {
+  font-size: 8vw;
+  margin: 0;
+  padding: 0;
+}
+
+.ohioText {
+  font-weight: bold;
+  color: rgb(75, 75, 78);
+}
+
+main {
+  margin: 10vw 5vw 0 5vw;
+}
+
+main p {
+  margin: 0;
+  font-size: 5vw;
+}
+
+.contactMe {
+  text-decoration: underline;
+}
+
+

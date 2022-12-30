@@ -1,0 +1,20 @@
+/* mobile design */
+.header-navbar {
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  /* height: 10%; */
+}
+
+.header-navbar a {
+  font-size: 10vw;
+  color: white;
+  text-decoration: none;
+}
+
+.header-navbar img {
+  width: 10vw;
+  cursor: pointer;
+}
