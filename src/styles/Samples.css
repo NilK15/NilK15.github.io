@@ -1,0 +1,28 @@
+#samplesSection {
+  display: flex;
+  background-color: rgb(24, 24, 35);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 200vw;
+}
+
+#samplesHeader {
+  color: white;
+  font-size: 8vw;
+}
+
+#samplesMain {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  width: 90%;
+  justify-content: space-around;
+}
+
+#samplesMain div {
+  background-color: white;
+  border-radius: 10vw;
+  height: 50vw;
+  width: 100%;
+}
