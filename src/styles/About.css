@@ -1,5 +1,5 @@
 /* mobile design */
-section {
+#aboutSection {
   display: flex;
   flex-direction: column;
   background-color: rgb(24, 24, 35);
@@ -7,11 +7,11 @@ section {
   height: 100vw;
 }
 
-header {
+#aboutHeader {
   margin: 10vw 5vw 0 5vw;
 }
 
-header p {
+#aboutHeader p {
   font-size: 8vw;
   margin: 0;
   padding: 0;
@@ -22,11 +22,11 @@ header p {
   color: rgb(75, 75, 78);
 }
 
-main {
+#aboutMain {
   margin: 10vw 5vw 0 5vw;
 }
 
-main p {
+#aboutMain p {
   margin: 0;
   font-size: 5vw;
 }

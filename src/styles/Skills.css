@@ -1,0 +1,34 @@
+/* mobile design */
+#skillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 8vw;
+  background-color: black;
+  color: white;
+  height: 100vw;
+  justify-content: space-around;
+}
+
+#skillsMain {
+  display: flex;
+  column-gap: 20vw;
+  font-size: 4vw;
+}
+
+#skillsMain ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#skillsMain li {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 8vw 0 8vw 0;
+}
+
+#skillsMain img {
+  width: 10vw;
+}
