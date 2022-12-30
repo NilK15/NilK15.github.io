@@ -42,24 +42,41 @@
 }
 
 #contactMain img {
-  width: 10vw;
+  width: 20vw;
+}
+
+#githubImg {
+  border-radius: 10vw;
+}
+
+#linkedinImg {
+  border-radius: 2vw;
+  background-color: white;
+}
+
+#gmailImg{
+  border-radius: 2vw;
+  background-color: black;
 }
 
 #contactFooter {
   position: absolute;
-  bottom: 18vw;
+  display: flex;
+  bottom: 14vw;
   width: 100%;
   display: flex;
   justify-content: space-around;
   color: white;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
-#githubImg {
-  border-radius: 5vw;
-  background-color: white;
+#contactFooter img {
+  color: white;
+  width: 10vw;
 }
-#linkedinImg {
-  border-radius: 1vw;
-  background-color: white;
+
+#contactFooter div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

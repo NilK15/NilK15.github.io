@@ -2,6 +2,8 @@ import "../styles/Contact.css";
 import githubLogo from "../icons/github.svg";
 import linkedinLogo from "../icons/linkedin.svg";
 import gmailLogo from "../icons/gmail.svg";
+import phoneLogo from "../icons/phone.svg";
+import emailLogo from "../icons/email.svg";
 
 const Contact = () => {
   return (
@@ -16,8 +18,12 @@ const Contact = () => {
         <img id="gmailImg" src={gmailLogo} alt="nothing"></img>
       </main>
       <footer id="contactFooter">
-        <div id="phone">(330) 631 4642</div>
-        <div id="email">skhatri15@gmail.com</div>
+        <div id="phone">
+          <img src={phoneLogo} alt="nothing"></img>&nbsp;(330) 631 4642
+        </div>
+        <div id="email">
+          <img src={emailLogo} alt="nothing"></img>&nbsp;skhatri15@gmail.com
+        </div>
       </footer>
     </section>
   );
