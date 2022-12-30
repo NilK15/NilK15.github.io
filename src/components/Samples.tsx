@@ -8,6 +8,7 @@ const Samples = () => {
         <div>hi</div>
         <div>hi</div>
         <div>hi</div>
+        <div>hi</div>
       </main>
     </section>
   );

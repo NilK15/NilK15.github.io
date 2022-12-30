@@ -1,0 +1,42 @@
+#contactSection {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vw;
+  align-items: center;
+}
+
+#contactHeader {
+  color: white;
+}
+
+#contactHeader h1 {
+  text-align: center;
+  color: white;
+  font-size: 10vw;
+}
+
+#contactHeader p {
+  text-align: center;
+  color: white;
+  font-size: 7vw;
+}
+
+#contactMain {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#contactMain img {
+  width: 10vw;
+}
+
+#githubImg {
+  border-radius: 5vw;
+  background-color: white;
+}
+#linkedinImg {
+  border-radius: 1vw;
+  background-color: white;
+}
