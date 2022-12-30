@@ -5,6 +5,7 @@
   flex-direction: column;
   height: 100vw;
   align-items: center;
+  padding-top: 2vw;
 }
 
 #contactHeader {
