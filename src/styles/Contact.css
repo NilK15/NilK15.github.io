@@ -1,10 +1,10 @@
 #contactSection {
   background-color: black;
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100vw;
   align-items: center;
-  justify-content: space-between;
 }
 
 #contactHeader {
@@ -31,6 +31,7 @@
 
 #contactMain {
   display: flex;
+  margin-top: 12vw;
   width: 100%;
   justify-content: space-around;
 }
@@ -44,6 +45,8 @@
 }
 
 #contactFooter {
+  position: absolute;
+  bottom: 18vw;
   width: 100%;
   display: flex;
   justify-content: space-around;
