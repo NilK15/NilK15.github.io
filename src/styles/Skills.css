@@ -8,6 +8,7 @@
   color: white;
   height: 100vw;
   justify-content: space-around;
+  scroll-margin-top: 18vw;
 }
 
 #skillsMain {

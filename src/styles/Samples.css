@@ -1,18 +1,19 @@
-#samplesSection {
+.samplesSection {
   display: flex;
   background-color: rgb(24, 24, 35);
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   height: 250vw;
+  scroll-margin-top: 18vw;
 }
 
-#samplesHeader {
+.samplesHeader {
   color: white;
   font-size: 10vw;
 }
 
-#samplesMain {
+.samplesMain {
   display: flex;
   flex-direction: column;
   height: 90%;
@@ -20,9 +21,33 @@
   justify-content: space-around;
 }
 
-#samplesMain div {
+.samplesMain div {
+  display: flex;
+  align-items: center;
   background-color: white;
   border-radius: 10vw;
   height: 50vw;
   width: 100%;
+  color: black;
+  font-size: 5vw;
+  text-align: center;
+  cursor: pointer;
+}
+
+.samplesProject {
+  box-shadow: 3vw 3vw 3vw black;
+  overflow: hidden;
+}
+
+.samplesMain img {
+  background-color: black;
+  width: 60%;
+  height: 100%;
+  border-radius: 0 9vw 9vw 0;
+}
+
+main div p {
+  width: 100%;
+  padding: 0 2vw 0 2vw;
+  white-space: nowrap;
 }

@@ -5,6 +5,7 @@
   background-color: rgb(24, 24, 35);
   color: white;
   height: 100vw;
+  margin-top: 20vw;
 }
 
 #aboutHeader {
@@ -27,11 +28,12 @@
 }
 
 #aboutMain p {
-  margin: 0;
+  margin-top: 10vw;
   font-size: 5vw;
 }
 
 .contactMe {
+  color: white;
   text-decoration: underline;
 }
 

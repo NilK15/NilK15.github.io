@@ -7,7 +7,6 @@ import phoneLogo from "../icons/phone.svg";
 import emailLogo from "../icons/email.svg";
 
 const Contact = () => {
-  const contactRef = useRef(null);
   const GITHUB_URL = "https://github.com/nilk15";
   const LINKEDIN_URL = "https://www.linkedin.com/in/sunil-khatri-a195a366/";
 
@@ -16,7 +15,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contactSection" ref={contactRef}>
+    <section id="contactSection">
       <header id="contactHeader">
         <h1>Contact Me</h1>
         <p>Want to work together?</p>
@@ -34,7 +33,12 @@ const Contact = () => {
           alt="nothing"
           onClick={() => openURL(LINKEDIN_URL)}
         ></img>
-        <img id="gmailImg" src={gmailLogo} alt="nothing"></img>
+        <a
+          style={{ margin: "0", padding: "0" }}
+          href="mailto:skhatri15@gmail.com"
+        >
+          <img id="gmailImg" src={gmailLogo} alt="nothing"></img>
+        </a>
       </main>
       <footer id="contactFooter">
         <div id="phone">
