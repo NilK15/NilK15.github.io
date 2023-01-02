@@ -37,17 +37,53 @@
 .samplesProject {
   box-shadow: 3vw 3vw 3vw black;
   overflow: hidden;
+  transition: .1s linear;
 }
+
+
+.samplesProject:hover {
+  transform: translate(10px, 10px);
+}
+
 
 .samplesMain img {
   background-color: black;
   width: 60%;
   height: 100%;
-  border-radius: 0 9vw 9vw 0;
 }
 
 main div p {
   width: 100%;
   padding: 0 2vw 0 2vw;
   white-space: nowrap;
+}
+
+@media (min-width:750px) {
+
+  main div p {
+    padding: 0 6px 0 6px;
+  }
+  .samplesProject {
+    box-shadow: 15px 15px 15px black;
+  }
+
+  #samplesSection {
+    font-size:30px;
+    height: 1873px;
+    scroll-margin-top: 130px;
+  }
+
+  .samplesHeader {
+    font-size: 76px;
+  }
+
+  .samplesMain div {
+    height: 374.5px;
+    font-size: 41.5px;
+    border-radius: 70px;
+  }
+
+  .samplesMain img {
+  border-radius: 0 60x 60px 0;
+  }
 }

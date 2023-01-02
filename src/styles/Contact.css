@@ -86,3 +86,31 @@
   align-items: center;
   justify-content: space-around;
 }
+
+@media (min-width:750px) {
+
+  #contactSection {
+    height: 751px;
+    padding-top: 10px;
+  }
+  #contactHeader h1 {
+    font-size: 75px;
+  }
+  #contactHeader p {
+    font-size: 53px;
+  }
+  #contactMain {
+    margin-top: 90px;
+  }
+  #contactMain img {
+    width: 150px;
+  }
+  #contactFooter {
+    bottom: 110px;
+    font-size: 30px;
+  }
+  #contactFooter img {
+    width: 38px;
+  }
+
+}

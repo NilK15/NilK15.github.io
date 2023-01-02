@@ -36,10 +36,10 @@
 .dropDown {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: fixed absolute;
   right: 0;
   padding: 0;
-  margin: 0 1vw 0 0;
+  margin: 20vw 1vw 0 0;
   background-color: white;
   list-style: none;
 }
@@ -69,4 +69,37 @@
 
 .hideDropDown {
 display: none;
+}
+
+
+@media (min-width:750px) {
+
+  .header-navbar {
+    width: 750px;
+    height: 150px;
+  }
+
+  #name {
+    font-size: 82px;
+  }
+
+  .navbar-name-div a {
+    padding-left: 15px;
+  }
+
+  .header-navbar img {
+    width: 76px;
+  }
+
+  .dropDown{
+  margin: 150px 10px 0 0;
+  }
+
+  .dropDown li a {
+    padding: 16px;
+  }
+  .dropDown li a,
+  .dropDown li:hover a {
+    font-size: 38px;
+  }
 }

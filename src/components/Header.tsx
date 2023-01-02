@@ -16,7 +16,9 @@ function Header() {
   return (
     <nav className="header-navbar">
       <div className="navbar-name-div">
-        <a href="/">Sunil.K</a>
+        <a id="name" href="/">
+          Sunil.K
+        </a>
       </div>
       <div className="navbar-links-div">
         <button onClick={toggleHamburger}>

@@ -30,11 +30,37 @@
 #aboutMain p {
   margin-top: 10vw;
   font-size: 5vw;
+  /* font-size: clamp(20px, 5vw, 50px); */
+  /* font-size: max(5vw, 20px); */
 }
 
 .contactMe {
   color: white;
   text-decoration: underline;
+}
+
+@media (min-width:750px) {
+
+  #aboutHeader {
+    margin: 74px 20px 0px 38px;
+  }
+
+  #aboutHeader p{
+    font-size: 60px;
+  }
+  
+  #aboutMain {
+    margin: 74px 50px 0px 38px;
+  }
+
+  #aboutMain p {
+    margin-top: 72px;
+    font-size: 37px;
+  }
+  #aboutSection {
+    height: 751px;
+    margin-top: 150px;
+  }
 }
 
 
