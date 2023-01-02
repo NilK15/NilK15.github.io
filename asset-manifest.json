@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.602eb21c.css",
+    "main.css": "/static/css/main.3012e1af.css",
     "main.js": "/static/js/main.31921e6f.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/apifetcher.png": "/static/media/apifetcher.82a11500821a3cda5ebf.png",
@@ -10,22 +10,22 @@
     "static/media/react.svg": "/static/media/react.ca62871c68792ac38fcafcaee4a73a66.svg",
     "static/media/java.svg": "/static/media/java.04fdacd6d2a2c2d1a1a17ad90c9a3d38.svg",
     "static/media/email.svg": "/static/media/email.44c4193ca825fc34584b608c339baa2e.svg",
+    "index.html": "/index.html",
     "static/media/javascript.svg": "/static/media/javascript.8a22bad4e7d3d75b0db94ff8858289cc.svg",
     "static/media/spring.svg": "/static/media/spring.2cc955f51d7f7d7919157bf71898e200.svg",
     "static/media/github.svg": "/static/media/github.eb064d88aa54211250093ad27a4d8861.svg",
     "static/media/gmail.svg": "/static/media/gmail.8d13224811ba50d80d2d1d767ca2c831.svg",
-    "index.html": "/index.html",
     "static/media/sql.svg": "/static/media/sql.8fd683722a9d22e497752bd01981a9d0.svg",
     "static/media/html5.svg": "/static/media/html5.58cb3fbca8fbeeaf19d2556981ec5f55.svg",
     "static/media/css.svg": "/static/media/css.3595239537529f4cb75e7476a59e1a87.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.aee6093620a653f4c4e7eb6f47207272.svg",
     "static/media/hamburger.svg": "/static/media/hamburger.f6e917dfd3241a6793e686470f3bf8ba.svg",
-    "main.602eb21c.css.map": "/static/css/main.602eb21c.css.map",
+    "main.3012e1af.css.map": "/static/css/main.3012e1af.css.map",
     "main.31921e6f.js.map": "/static/js/main.31921e6f.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.602eb21c.css",
+    "static/css/main.3012e1af.css",
     "static/js/main.31921e6f.js"
   ]
 }
