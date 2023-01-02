@@ -42,6 +42,7 @@
   margin: 20vw 1vw 0 0;
   background-color: white;
   list-style: none;
+  border-radius: 5px;
 }
 
 .dropDown li {
@@ -49,6 +50,7 @@
 
 .dropDown li:hover {
   background-color: #1843df;
+  transition: .5s;
   color: white;
   cursor: pointer;
 }
