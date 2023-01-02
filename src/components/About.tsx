@@ -1,7 +1,12 @@
+import { useRef } from "react";
 import "../styles/About.css";
 import { Link, Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 const About = () => {
+  const contactRef = useRef<HTMLInputElement>(null);
+  const contactClick = () => {
+    // contact.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <section id="aboutSection">
       <header id="aboutHeader">
@@ -14,7 +19,9 @@ const About = () => {
           an interesting project or idea? Need my amazing, expansive skill set?
           &nbsp;
           {/* use react-dom Link routing here */}
-          <strong className="contactMe">Contact me.</strong>
+          <strong className="contactMe" onClick={contactClick}>
+            Contact me.
+          </strong>
         </p>
       </main>
     </section>

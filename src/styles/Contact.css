@@ -43,6 +43,7 @@
 
 #contactMain img {
   width: 20vw;
+  cursor: pointer;
 }
 
 #githubImg {
