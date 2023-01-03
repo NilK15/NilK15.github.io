@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   height: calc(100vh - 20vw);
+  max-height: 1100px;
   align-items: center;
   padding-top: 2vw;
   z-index: 10;
@@ -22,6 +23,7 @@
 } */
 
 #contactSection p.contactParagraph {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
   font-size: 15vw;
 }
 
@@ -42,7 +44,7 @@
   display: flex;
   flex-direction: column ;
   align-items: center;
-  /* margin-top: 12vw; */
+  /* margin-top: 12vh; */
   width: 100%;
   justify-content: space-around;
 }
@@ -114,10 +116,11 @@
   }
   #contactMain {
     flex-direction: row;
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
+  margin-top: 12vh;
   }
   #contactMain img {
-    width: 150px;
+    width: 200px;
   }
   #contactFooter {
     /* bottom: 110px; */

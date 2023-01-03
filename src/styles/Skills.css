@@ -7,11 +7,14 @@
   background-color: black;
   color: white;
   height: calc(100vh - 20vw);
+  max-height: 1100px;
   scroll-margin-top: 18vw;
 }
 
 #skillsSection header {
   margin-top: 8px;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    border-bottom: solid;
 }
 
 #skillsMain {
@@ -47,11 +50,9 @@
   }
 
   #skillsMain ol {
-    padding: 5vh 0 0 0;
-  }
-
-  #skillsMain img {
-    width: 30vw;
+    /* padding: 10vh 0 0 0; */
+    /* padding: 120px 0 0 0; */
+    padding: min(10vh, 70px) 0 0 0;
   }
 
   #skillsMain li {
@@ -59,7 +60,7 @@
   }
 
   #skillsMain img {
-    width: 100px;
+    width: 10vh;
   }
 
   #skillsSection {

@@ -5,11 +5,13 @@
   background-color: rgb(24, 24, 35);
   color: white;
   height: calc(100vh - 20vw);
+  max-height: 1100px;
   margin-top: 20vw;
 }
 
 #aboutHeader {
-  margin: 10vw 5vw 0 5vw;
+  margin: 10vh 10px 0 10px;
+  padding: 0;
 }
 
 #aboutHeader p {
@@ -24,7 +26,7 @@
 }
 
 #aboutMain {
-  margin: 10vw 5vw 0 5vw;
+  margin: 0 10px 0 10px;
 }
 
 #aboutMain p {
@@ -46,16 +48,16 @@
   }
 
   #aboutHeader p{
-    font-size: 60px;
+    font-size: min(6vh, 80px);
   }
   
   #aboutMain {
-    margin: 74px 50px 0px 38px;
+    margin: 0px 50px 0px 38px;
   }
 
   #aboutMain p {
-    margin-top: 72px;
-    font-size: 37px;
+    margin-top: min(15vh, 150px);
+    font-size: min(4vh, 50px);
   }
   #aboutSection {
   height: calc(100vh - 150px);
