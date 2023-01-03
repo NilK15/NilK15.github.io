@@ -3,54 +3,64 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 10vw;
+  font-size: 15vw;
   background-color: black;
   color: white;
-  height: 100vw;
-  justify-content: space-around;
+  height: calc(100vh - 20vw);
   scroll-margin-top: 18vw;
+}
+
+#skillsSection header {
+  margin-top: 8px;
 }
 
 #skillsMain {
   display: flex;
   column-gap: 20vw;
-  font-size: 4vw;
+  font-size: 5vw;
 }
+
 
 #skillsMain ol {
   list-style: none;
+  padding: 10vh 0 0 0;
   margin: 0;
-  padding: 0;
 }
 
 #skillsMain li {
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 0;
-  margin: 8vw 0 8vw 0;
+  margin: 0 0 2vh 0;
 }
 
 #skillsMain img {
-  width: 10vw;
+  width: 20vw;
 }
 
-@media (min-width:750px) {
+@media (min-width:620px) {
 
   #skillsMain {
     font-size:30px;
-    column-gap: 150px;
+    column-gap: 200px;
   }
+
+#skillsMain img {
+  width: 30vw;
+}
 
   #skillsMain li {
-    margin: 58px 0 58px 0;
+    margin-bottom: 10px;
   }
 
-  #skillsMain img {
-    width: 76px;
-  }
+#skillsMain img {
+  width: 100px;
+}
 
   #skillsSection {
-    height: 751px;
+    height: calc(100vh - 150px);
+    /* height: 751px; */
     font-size: 76px;
     scroll-margin-top: 130px;
   }

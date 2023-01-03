@@ -4,7 +4,7 @@
   flex-direction: column;
   background-color: rgb(24, 24, 35);
   color: white;
-  height: 100vw;
+  height: calc(100vh - 20vw);
   margin-top: 20vw;
 }
 
@@ -13,7 +13,7 @@
 }
 
 #aboutHeader p {
-  font-size: 8vw;
+  font-size: 10vw;
   margin: 0;
   padding: 0;
 }
@@ -28,8 +28,8 @@
 }
 
 #aboutMain p {
-  margin-top: 10vw;
-  font-size: 5vw;
+  margin-top: 20vw;
+  font-size: 7vw;
   /* font-size: clamp(20px, 5vw, 50px); */
   /* font-size: max(5vw, 20px); */
 }
@@ -39,7 +39,7 @@
   text-decoration: underline;
 }
 
-@media (min-width:750px) {
+@media (min-width:620px) {
 
   #aboutHeader {
     margin: 74px 20px 0px 38px;
@@ -58,7 +58,7 @@
     font-size: 37px;
   }
   #aboutSection {
-    height: 751px;
+  height: calc(100vh - 150px);
     margin-top: 150px;
   }
 }
