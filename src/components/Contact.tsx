@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <section id="contactSection">
       <header id="contactHeader">
-        <h1>Contact Me</h1>
+        <p className="contactParagraph">Contact Me</p>
         <p>Want to work together?</p>
       </header>
       <main id="contactMain">

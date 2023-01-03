@@ -14,10 +14,14 @@
   color: white;
 }
 
-#contactHeader h1 {
+/* #contactHeader h1 {
   margin-top: 0;
   text-align: center;
   color: white;
+  font-size: 15vw;
+} */
+
+#contactSection p.contactParagraph {
   font-size: 15vw;
 }
 
@@ -30,7 +34,9 @@
   text-align: center;
   color: white;
   font-size: 7vw;
+  margin-bottom: 5vh;
 }
+
 
 #contactMain {
   display: flex;
@@ -98,11 +104,12 @@
     height: calc(100vh - 150px);
     padding-top: 10px;
   }
-  #contactHeader h1 {
-    font-size: 75px;
-  }
   #contactHeader p {
     font-size: 53px;
+  }
+
+  #contactHeader p.contactParagraph {
+    font-size: 100px;
   }
   #contactMain {
     flex-direction: row;
