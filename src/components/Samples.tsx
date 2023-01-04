@@ -8,7 +8,7 @@ const Samples = () => {
 
   return (
     <section id="samplesSection" className="samplesSection">
-      <header className="samplesHeader">Sample Projects</header>
+      <header className="samplesHeader">Projects</header>
       <main className="samplesMain">
         <div
           className="samplesProject"
