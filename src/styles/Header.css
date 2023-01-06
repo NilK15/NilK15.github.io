@@ -13,10 +13,11 @@
 }
 
 .navbar-name-div a {
-  font-size: 11vw;
+  /* font-size: 11vw; */
+  font-size: 6rem;
   color: white;
   text-decoration: none;
-  padding-left: 2vw;
+  padding-left: .5em;
 }
 
 .header-navbar button {
@@ -73,8 +74,12 @@
 display: none;
 }
 
+.navItemsDesktop {
+  display: none;
+}
 
-@media (min-width:620px) {
+
+/* @media (min-width:620px) {
 
   .header-navbar {
     width: 750px;
@@ -104,4 +109,57 @@ display: none;
   .dropDown li:hover a {
     font-size: 38px;
   }
+} */
+
+@media (min-width:800px) {
+  .header-navbar {
+    position: fixed;
+    top: 0;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    /* Footer is at z-index: 20 */
+    /* padding: 1rem; */
+    height: 8rem;
+    z-index: 50;
+  }
+
+  .navbar-name-div a {
+    padding-left: 1rem;
+  }
+  .header-navbar button {
+    display: none;  
+  }
+  
+  .navbar-links-div {
+    display: flex;
+    height: 100%;
+  }
+
+  .navItemsDesktop {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navItemsDesktop li {
+    list-style: none;
+  }
+
+  .navItemsDesktop li:hover {
+    background-color: #1B4DFF ;
+  }
+
+  .navItemsDesktop li a {
+    padding: 0 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 3rem ;
+    text-decoration: none;
+    height: 100%;
+  }
+
+
 }

@@ -30,12 +30,30 @@ function Header() {
         </button>
         <ul className={`dropDown ${hamburgerOpen ? "" : " hideDropDown"}`}>
           <li onClick={closeBurger}>
+            <a href="#">Home</a>
+          </li>
+          <li onClick={closeBurger}>
             <a href="#skillsSection">Skills</a>
           </li>
           <li onClick={closeBurger}>
             <a href="#samplesSection">Projects</a>
           </li>
           <li onClick={closeBurger}>
+            <a href="#contactSection">Contact</a>
+          </li>
+        </ul>
+        {/* maybe introduce Routing here */}
+        <ul className="navItemsDesktop">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#skillsSection">Skills</a>
+          </li>
+          <li>
+            <a href="#samplesSection">Projects</a>
+          </li>
+          <li>
             <a href="#contactSection">Contact</a>
           </li>
         </ul>

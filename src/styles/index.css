@@ -20,3 +20,12 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none ;
  }
+
+
+ @media (min-width: 800px) {
+
+  #root {
+    display: block;
+  }
+  
+ }

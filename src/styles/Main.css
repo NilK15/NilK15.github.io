@@ -4,3 +4,12 @@
   position: relative;
   max-width: 750px;
 }
+
+@media (min-width: 800px) {
+
+  .main {
+    width: 100%;
+    max-width: none;
+  }
+  
+}
