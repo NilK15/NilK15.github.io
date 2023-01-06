@@ -64,9 +64,9 @@
   }
 
   #skillsSection {
-    height: calc(100vh - 150px);
+    height: calc(100vh - 8rem);
     /* height: 751px; */
     font-size: 100px;
-    scroll-margin-top: 130px;
+    scroll-margin-top: 7.5rem;
   }
 }

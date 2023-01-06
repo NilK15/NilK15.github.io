@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="aboutSection">
       <header id="aboutHeader">
-        <p>I'm Sunil Khatri. I like to design, code and I am</p>
+        <p>Hi. I'm Sunil Khatri. I like to design, code and I am</p>
         <p className="ohioText">based in Ohio</p>
       </header>
       <main id="aboutMain">
@@ -19,6 +19,10 @@ const About = () => {
             <strong className="contactMe">Contact me.</strong>
           </a>
         </p>
+        <div className="buttonsDiv">
+          <button>Contact Me</button>
+          <button>See My Work</button>
+        </div>
       </main>
     </section>
   );
