@@ -20,8 +20,8 @@ const About = () => {
           </a>
         </p>
         <div className="buttonsDiv">
-          <button>Contact Me</button>
-          <button>See My Work</button>
+          <a href="#contactSection">Contact Me</a>
+          <a href="#samplesSection">See My Work</a>
         </div>
       </main>
     </section>

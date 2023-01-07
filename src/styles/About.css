@@ -43,7 +43,6 @@
 
 .buttonsDiv {
   display: none;
-  /* display: inline-block; */
 }
 
 @media (min-width:800px) {
@@ -80,15 +79,17 @@
     column-gap: 2rem;
   }
 
-  .buttonsDiv button {
+  #aboutMain .buttonsDiv a {
+    display: flex;
     color: white;
     font-size: max(1.3vw, 1.3rem);
     padding: .5rem 1.5rem;
     border: none;
     border-radius: 2vw;
+    text-decoration: none;
     background-color: #1B4DFF ;
-    display: inline-block;
   }
+
 }
 
 
