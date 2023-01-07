@@ -51,7 +51,7 @@ const Samples = () => {
       </main>
       <footer className="samplesFooter">
         <p>More Projects on GitHub</p>
-        <a href="www.github.com/nilk15">Learn More</a>
+        <a href="https://www.github.com/nilk15">See More</a>
       </footer>
     </section>
   );

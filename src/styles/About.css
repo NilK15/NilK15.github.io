@@ -16,7 +16,7 @@
 }
 
 #aboutHeader p {
-  font-size: 9.3vw;
+  font-size: 8vw;
   margin: 0;
   padding: 0;
 }
@@ -32,7 +32,7 @@
 
 #aboutMain p {
   margin-top: 20vw;
-  font-size: 7vw;
+  font-size: 6vw;
   /* font-size: clamp(20px, 5vw, 50px); */
   /* font-size: max(5vw, 20px); */
 }
