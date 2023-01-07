@@ -42,7 +42,7 @@
   width: 20vw;
 }
 
-@media (min-width:620px) {
+@media (min-width:800px) {
 
   #skillsMain {
     font-size:30px;
@@ -64,8 +64,8 @@
   }
 
   #skillsSection {
-    height: calc(100vh - 8rem);
-    /* height: 751px; */
+    height: calc(100vh - 3rem);
+    max-height: none;
     font-size: 100px;
     scroll-margin-top: 3rem;
   }

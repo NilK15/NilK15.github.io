@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "../styles/About.css";
+import profileImage from "../imgs/youtube.png";
 import { Link, Routes, Route, BrowserRouter as Router } from "react-router-dom";
 
 const About = () => {
@@ -9,6 +10,9 @@ const About = () => {
         <p>Hi. I'm Sunil Khatri. I like to design, code and I am</p>
         <p className="ohioText">based in Ohio</p>
       </header>
+      <div className="profileImage">
+        {/* <img src={profileImage} alt="PlaceHolder"></img> */}
+      </div>
       <main id="aboutMain">
         <p>
           I’m one of the most passionate developers you will come across. Have

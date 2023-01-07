@@ -11,16 +11,23 @@
 .samplesHeader {
   color: white;
   font-size: 15vw;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    border-bottom: solid;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  border-bottom: solid;
+}
+
+.samplesHeaderDesktop {
+  display: none;
+}
+
+.samplesHeaderDesktop p {
+  display: none;
 }
 
 .samplesMain {
   display: flex;
   flex-direction: column;
-  height: 90%;
-  width: 90%;
-  justify-content: space-around;
+  /* height: 90%;
+  width: 90%; */
 }
 
 .samplesMain div {
@@ -60,32 +67,90 @@ main div p {
   white-space: nowrap;
 }
 
-@media (min-width:620px) {
+#samplesSection footer {
+  display: none;
+}
+
+@media (min-width:800px) {
+
+  #samplesSection {
+    /* font-size:30px; */
+    height: calc(100vh - 3rem);
+    scroll-margin-top: 3rem;
+  }
 
   main div p {
     padding: 0 6px 0 6px;
   }
+
   .samplesProject {
     box-shadow: 15px 15px 15px black;
+    transition: .1s linear;
   }
 
-  #samplesSection {
-    font-size:30px;
-    height: 1873px;
-    scroll-margin-top: 3rem;
+  .samplesProject p {
+    font-size: 2vw;
   }
 
   .samplesHeader {
-    font-size: 100px;
+    /* font-size: 100px; */
+    display: none;
+  }
+
+  .samplesHeaderDesktop {
+    color: white;
+    display: block;
+    font-size: 4rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  .samplesHeaderDesktop p {
+    display: block;
+    margin: 0;
+    padding-left: 2vw;
+  }
+
+  .samplesMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
   }
 
   .samplesMain div {
-    height: 374.5px;
-    font-size: 41.5px;
-    border-radius: 70px;
+    flex-direction: column;
+    height: 20vw;
+    width: 25vw;
+    font-size: 2.5rem;
+    border-radius: 30px;
+  }
+
+  .samplesMain p {
+    margin: 1vw;
   }
 
   .samplesMain img {
-  border-radius: 0 60x 60px 0;
+    border-radius: 0 0 0 0;
+    width: 100%;
+  }
+
+  #samplesSection footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+  }
+
+  #samplesSection footer a {
+    color: white;
+    font-size: max(1.3vw, 1.3rem);
+    padding: .5rem 1.5rem;
+    border: none;
+    border-radius: 2vw;
+    text-decoration: none;
+    background-color: #1B4DFF ;
+    white-space: nowrap;
   }
 }

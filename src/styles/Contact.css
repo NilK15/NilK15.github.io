@@ -99,13 +99,15 @@
   justify-content: space-around;
 }
 
-@media (min-width:620px) {
+@media (min-width:800px) {
 
   #contactSection {
     /* height: calc(100vh - 20vw); */
-    height: calc(100vh - 150px);
-    padding-top: 10px;
-    scroll-margin-top: 150px;
+    height: calc(100vh - 3rem);
+    padding-top: 0;
+    max-height: none;
+    /* scroll-margin-top: 150px; */
+    scroll-margin-top: 3rem;
   }
   #contactHeader p {
     font-size: 53px;
