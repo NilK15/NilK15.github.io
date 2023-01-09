@@ -51,6 +51,10 @@
   transition: .1s linear;
 }
 
+.samplesProject:active {
+  transform: translate(0px, 10px);
+    box-shadow: none;
+}
 
 .samplesMain img {
   background-color: black;

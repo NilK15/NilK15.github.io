@@ -63,7 +63,7 @@
 
 #githubImg  {
   border-radius: 50%;
-  transition: .3s;
+  transition: .1s;
 }
 
 #contactMain .githubBG #githubImg {
@@ -77,7 +77,7 @@
   /* background-color: #808080; */
   background-color: whitesmoke;
   box-shadow: 0px 10px 20px  black;
-  transition: .3s;
+  transition: .1s;
   margin-bottom: 5vh;
   padding: 1rem;
 }
@@ -86,8 +86,14 @@
   border-radius: 2vw;
   background-color: whitesmoke;
   box-shadow: 0px 10px 20px black;
-  transition: .3s;
+  transition: .1s;
   width: calc(13vh + 1rem);
+}
+
+#gmailImg:active, .githubBG:active, #contactMain #linkedinImg:active { 
+  translate: 0px 5px;
+  box-shadow: none;
+  transition: .1s;
 }
 
 #gmailImg{
@@ -190,7 +196,6 @@
   }
 
   #gmailImg:active, .githubBG:active, #contactMain #linkedinImg:active { 
-
     translate: 0px 5px;
     box-shadow: none;
   }
