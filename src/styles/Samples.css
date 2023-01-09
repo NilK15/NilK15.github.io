@@ -52,17 +52,6 @@
 }
 
 
-.samplesProject:active {
-  transform: translate(0px, 10px);
-}
-
-:is(.samplesProject:hover, .samplesProject:focus) {
-  /* transform: translate(0px, 10px); */
-  outline: solid 10px #1B4DFF ;
-  transition: .1s ;
-}
-
-
 .samplesMain img {
   background-color: black;
   width: 60%;
@@ -96,8 +85,18 @@ main div p {
   }
 
 
+  :is(.samplesProject:hover, .samplesProject:focus) {
+    /* transform: translate(0px, 10px); */
+    outline: solid 10px #1B4DFF ;
+    transition: .1s ;
+  }
+
   .samplesProject:active {
-    box-shadow: none;
+    transform: translate(0px, 10px);
+      box-shadow: none;
+  }
+
+  .samplesProject:active {
   }
 
   .samplesProject p {
