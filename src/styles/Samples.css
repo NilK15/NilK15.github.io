@@ -48,7 +48,6 @@
 .samplesProject {
   box-shadow: 0vw 3vw 3vw black;
   overflow: hidden;
-  transition: .1s linear;
 }
 
 .samplesProject:active {
@@ -85,14 +84,15 @@ main div p {
 
   .samplesProject {
     box-shadow: 0px 15px 15px black;
-    transition: .3s;
   }
 
 
   :is(.samplesProject:hover, .samplesProject:focus) {
     /* outline: solid 10px #1B4DFF ; */
     /* have to use this because Safari doesn't like putting radius on outlines */
-    box-shadow: 0 0px 0px 5px #1B4DFF;
+    /* box-shadow: 0 0px 0px 8px #1B4DFF; */
+    border: solid 8px #1B4DFF;
+    margin: -8px;
     transition: .1s ;
   }
 
