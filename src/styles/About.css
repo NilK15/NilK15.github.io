@@ -119,11 +119,15 @@
     box-shadow: 0px 4px 5px black;
   }
 
-  #aboutMain .buttonsDiv a:hover {
+  :is(#aboutMain .buttonsDiv a:hover, #aboutMain .buttonsDiv a:focus) {
     background-color: white;
     color: #1B4DFF ;
+  }
+
+  #aboutMain .buttonsDiv a:active {
     translate: 0px 2px;
     box-shadow: none;
+    transition: .1s;
   }
 
 }

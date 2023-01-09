@@ -170,7 +170,7 @@ main div p {
     text-decoration: none;
     background-color: #1B4DFF ;
     white-space: nowrap;
-    transition: .4s;
+    box-shadow: 0px 4px 5px black;
   }
 
   #samplesSection footer p {
@@ -180,5 +180,12 @@ main div p {
   #samplesSection footer a:hover {
     background-color: white;
     color: #1B4DFF ;
+    transition: .3s;
+  }
+
+  #samplesSection footer a:active {
+    translate: 0px 2px;
+    box-shadow: none;
+    transition: .1s;
   }
 }
