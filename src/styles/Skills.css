@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rgba(0, 0, 0, 0.960); */
   justify-content: space-between;
   background-color: hsl(240, 18%, 7%);
   color: white;
@@ -28,7 +27,6 @@
 
 #skillsMain ol {
   list-style: none;
-  /* padding: 10vh 0 0 0; */
   padding: 0;
   margin-bottom: 100px;
 }
@@ -42,37 +40,30 @@
 }
 
 #skillsMain img {
-  /* width: 20vw; */
   width: min(13vh, 75px);
 }
 
 @media (min-width:800px) {
 
   #skillsSection {
-    /* background-color: #181823f1; */
-    /* background-color: rgba(0, 0, 0, 0.960); */
     justify-content: space-around;
   }
 
   #skillsSection header {
     font-size: 4rem;
     align-self: start;
-    margin-top: 0;
+    margin-top: 5vh;
+    margin-bottom: 0;
     text-shadow: 2px 2px 5px black;
     border: initial;
     padding-left: 2vw;
   }
 
   #skillsMain {
-
-    /* font-size: max(3vw, 3rem); */
     column-gap: 30vw;
   }
 
   #skillsMain ol {
-    /* padding: 10vh 0 0 0; */
-    /* padding: 120px 0 0 0; */
-    /* padding: min(10vh, 70px) 0 0 0; */
     padding:0;
     font-size: min(4vw, 3rem);
   }
