@@ -204,7 +204,9 @@
   }
 
   #gmailImg:hover, .githubBG:hover, #contactMain #linkedinImg:hover { 
-    outline: solid 10px #1B4DFF;
+    /* outline: solid 10px #1B4DFF; */
+    /* have to use this because Safari doesn't like putting radius on outlines */
+    box-shadow: 0 0px 0px 5px #1B4DFF;
     /* outline: solid peachpuff; */
     transition: .1s;
   }

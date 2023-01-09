@@ -90,7 +90,9 @@ main div p {
 
 
   :is(.samplesProject:hover, .samplesProject:focus) {
-    outline: solid 10px #1B4DFF ;
+    /* outline: solid 10px #1B4DFF ; */
+    /* have to use this because Safari doesn't like putting radius on outlines */
+    box-shadow: 0 0px 0px 5px #1B4DFF;
     transition: .1s ;
   }
 
@@ -135,8 +137,6 @@ main div p {
 
   .samplesMain div {
     flex-direction: column;
-    /* height: 22vw; */
-    /* width: 22vw; */
     height: min(18vw, 400px);
     width: min(18vw, 400px);
     padding: 1rem;
