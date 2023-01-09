@@ -23,7 +23,7 @@
 } */
 
 #contactSection p.contactParagraph {
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-shadow: 2px 2px 5px black;
   font-size: 15vw;
 }
 
@@ -74,7 +74,8 @@
 
 #gmailImg{
   border-radius: 2vw;
-  background-color: black;
+  /* background-color: rgba(0, 0, 0, 0.960); */
+  /* background-color: black; */
 }
 
 #contactFooter {
@@ -102,34 +103,55 @@
 @media (min-width:800px) {
 
   #contactSection {
-    /* height: calc(100vh - 20vw); */
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.960);
     height: calc(100vh - 3rem);
     padding-top: 0;
     max-height: none;
-    /* scroll-margin-top: 150px; */
     scroll-margin-top: 3rem;
   }
-  #contactHeader p {
-    font-size: 53px;
+
+  /* #contactSection p .contactParagraph {
+    font-size: 4rem;
+  } */
+
+  #contactHeader {
+    align-self: flex-start;
   }
 
   #contactHeader p.contactParagraph {
-    font-size: 100px;
+    margin: 0;
+    padding-top: 6vh;
+    padding-left: 2vw;
+    font-size: 4rem;
   }
+
+  #contactHeader .contactSecondParagraph {
+    display: none;
+  }
+
   #contactMain {
     flex-direction: row;
-    /* margin-top: 5vh; */
-  margin-top: 12vh;
   }
+
   #contactMain img {
-    width: 200px;
+    width: min(18vw, 400px);
+    margin-bottom: 0;
   }
+
   #contactFooter {
-    /* bottom: 110px; */
-    font-size: 30px;
+    position: initial;
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    color: white;
+    font-size: 2rem;
   }
+
   #contactFooter img {
-    width: 38px;
+    width: 3rem;
   }
 
 }

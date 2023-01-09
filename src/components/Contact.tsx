@@ -18,7 +18,7 @@ const Contact = () => {
     <section id="contactSection">
       <header id="contactHeader">
         <p className="contactParagraph">Contact Me</p>
-        <p>Want to work together?</p>
+        <p className="contactSecondParagraph">Want to work together?</p>
       </header>
       <main id="contactMain">
         <img

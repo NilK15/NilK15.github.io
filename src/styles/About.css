@@ -63,6 +63,7 @@
   }
 
   #aboutHeader p{
+    text-shadow: 2px 2px 5px black;
     font-size: max(3vw, 3rem);
   }
   
@@ -111,6 +112,12 @@
     text-decoration: none;
     background-color: #1B4DFF ;
     white-space: nowrap;
+    transition: .4s;
+  }
+
+  #aboutMain .buttonsDiv a:hover {
+    background-color: white;
+    color: #1B4DFF ;
   }
 
 }
