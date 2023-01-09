@@ -20,7 +20,7 @@
 #skillsMain {
   display: flex;
   column-gap: 20vw;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 
@@ -70,7 +70,7 @@
     /* padding: 120px 0 0 0; */
     /* padding: min(10vh, 70px) 0 0 0; */
     padding:0;
-    font-size: 3rem;
+    font-size: min(4vw, 3rem);
   }
 
   #skillsMain li {
@@ -79,13 +79,11 @@
   }
 
   #skillsMain img {
-    width: min(15vh, 300px);
+    width: min(13vh, 300px);
   }
 
   #skillsSection {
     height: calc(100vh - 3rem);
-    max-height: none;
-    font-size: 100px;
     scroll-margin-top: 3rem;
   }
 }
