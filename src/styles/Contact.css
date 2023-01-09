@@ -194,7 +194,6 @@
 
   #contactMain #linkedinImg {
     width: min(calc(18vw + 2rem), calc(300px + 2rem));
-    /* box-shadow: inset 0 0px 0px 10px #1B4DFF; */
   }
 
   .githubBG {
@@ -202,17 +201,19 @@
   }
 
   #gmailImg:hover, .githubBG:hover, #contactMain #linkedinImg:hover { 
-    /* outline: solid 10px #1B4DFF; */
-    /* have to use this because Safari doesn't like putting radius on outlines */
-    /* box-shadow: 0 0px 0px 5px #1B4DFF; */
     border: solid 8px #1B4DFF;
     margin: -8px;
-    /* outline: solid peachpuff; */
+    transition: .1s;
+  }
+
+  #contactMain #linkedinImg:hover { 
+    box-shadow: inset 0 0px 20px 20px #1B4DFF,  0px 10px 20px  black;
   }
 
   #gmailImg:active, .githubBG:active, #contactMain #linkedinImg:active { 
     translate: 0px 5px;
     box-shadow: none;
+    transition: .1s;
   }
 
   #contactFooter {
