@@ -2,6 +2,7 @@ import "../styles/Samples.css";
 import apiFetcherPic from "../imgs/apifetcher.png";
 import youtubePic from "../imgs/youtube.png";
 import { wrap } from "module";
+import { ClientRequest } from "http";
 
 const Samples = () => {
   const YOUTUBE_URL = "https://nilk15.github.io/youtube-design-html-css-only/";
@@ -33,18 +34,14 @@ const Samples = () => {
           <div
             style={{
               display: "flex",
+              height: "100%",
               flexDirection: "column",
               justifyContent: "center",
             }}
           >
-            <p
-              style={{
-                whiteSpace: "pre-wrap",
-                textAlign: "center",
-                alignItems: "center",
-              }}
-            >
-              More Projects Coming Soon...
+            <p style={{ whiteSpace: "pre-wrap" }}>
+              {" "}
+              More Projects Coming Soon...{" "}
             </p>
           </div>
         </div>

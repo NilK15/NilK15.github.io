@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.960);
+  /* background-color: rgba(0, 0, 0, 0.960); */
+  background-color: hsl(240, 18%, 7%);
   color: white;
   height: calc(100vh - 20vw);
   max-height: 1100px;
@@ -46,12 +47,12 @@
 
   #skillsSection {
     /* background-color: #181823f1; */
-    background-color: rgba(0, 0, 0, 0.960);
+    /* background-color: rgba(0, 0, 0, 0.960); */
     justify-content: space-around;
   }
 
   #skillsSection header {
-    font-size: 6rem;
+    font-size: 4rem;
     align-self: start;
     text-shadow: 2px 2px 5px black;
     border: initial;

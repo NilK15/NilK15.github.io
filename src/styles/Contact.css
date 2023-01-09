@@ -1,5 +1,5 @@
 #contactSection {
-  background-color: rgba(0, 0, 0, 0.960);
+  background-color: hsl(240, 18%, 7%);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -54,6 +54,7 @@
 }
 
 #contactMain img {
+  /* background-color: white; */
   width: 13vh;
   margin-bottom: 5vh;
   cursor: pointer;
@@ -64,18 +65,41 @@
 }
 
 #githubImg {
-  border-radius: 10vw;
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px black;
+  transition: .3s;
+}
+
+
+#githubImg:hover { 
+  translate: 0px 5px;
+  box-shadow: none;
 }
 
 #linkedinImg {
   border-radius: 2vw;
   background-color: white;
+  box-shadow: 0px 10px 20px black;
+  transition: .3s;
+}
+
+#linkedinImg:hover { 
+  translate: 0px 5px;
+  box-shadow: none;
 }
 
 #gmailImg{
   border-radius: 2vw;
   /* background-color: rgba(0, 0, 0, 0.960); */
-  /* background-color: black; */
+  background-color: white;
+  box-shadow: 0px 10px 20px black;
+  transition: .3s;
+}
+
+#gmailImg:hover { 
+  translate: 0px 5px;
+  box-shadow: none;
 }
 
 #contactFooter {
@@ -108,7 +132,6 @@
 
   #contactSection {
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.960);
     height: calc(100vh - 3rem);
     padding-top: 0;
     max-height: none;
@@ -127,7 +150,7 @@
     margin: 0;
     padding-top: 6vh;
     padding-left: 2vw;
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   /* #contactHeader p.contactParagraph {
@@ -143,11 +166,16 @@
 
   #contactMain {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 
   #contactMain img {
-    width: min(18vw, 400px);
+    width: min(18vw, 300px);
     margin-bottom: 0;
+  }
+
+  .githubBG {
+    /* background-color: white; */
   }
 
   #contactFooter {
@@ -158,7 +186,7 @@
     justify-content: center;
     gap: 10vw;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #contactFooter {

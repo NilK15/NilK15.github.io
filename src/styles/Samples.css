@@ -45,14 +45,14 @@
 }
 
 .samplesProject {
-  box-shadow: 3vw 3vw 3vw black;
+  box-shadow: 0vw 3vw 3vw black;
   overflow: hidden;
   transition: .1s linear;
 }
 
 
 .samplesProject:hover {
-  transform: translate(10px, 10px);
+  transform: translate(0px, 10px);
 }
 
 
@@ -75,7 +75,6 @@ main div p {
 @media (min-width:800px) {
 
   #samplesSection {
-    /* font-size:30px; */
     height: calc(100vh - 3rem);
     scroll-margin-top: 3rem;
   }
@@ -85,8 +84,13 @@ main div p {
   }
 
   .samplesProject {
-    box-shadow: 15px 15px 15px black;
-    transition: .1s linear;
+    box-shadow: 0px 15px 15px black;
+    transition: .3s;
+  }
+
+
+  .samplesProject:hover {
+    box-shadow: none;
   }
 
   .samplesProject p {
@@ -94,14 +98,13 @@ main div p {
   }
 
   .samplesHeader {
-    /* font-size: 100px; */
     display: none;
   }
 
   .samplesHeaderDesktop {
     color: white;
     display: block;
-    font-size: 6rem;
+    font-size: 4rem;
     width: 100%;
     text-align: left;
   }
@@ -123,8 +126,8 @@ main div p {
 
   .samplesMain div {
     flex-direction: column;
-    height: 20vw;
-    width: 25vw;
+    height: 25vw;
+    width: 20vw;
     font-size: 2.5rem;
     border-radius: 30px;
   }
@@ -156,6 +159,10 @@ main div p {
     background-color: #1B4DFF ;
     white-space: nowrap;
     transition: .4s;
+  }
+
+  #samplesSection footer p {
+    margin-top: 0;
   }
 
   #samplesSection footer a:hover {

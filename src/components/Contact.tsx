@@ -18,15 +18,19 @@ const Contact = () => {
     <section id="contactSection">
       <header id="contactHeader">
         <p className="contactParagraph">Contact Me</p>
-        <p className="contactSecondParagraph">Want to work together?</p>
+        <p className="contactSecondParagraph">
+          Interested in working together?
+        </p>
       </header>
       <main id="contactMain">
-        <img
-          id="githubImg"
-          src={githubLogo}
-          alt="nothing"
-          onClick={() => openURL(GITHUB_URL)}
-        ></img>
+        <div className="githubBG">
+          <img
+            id="githubImg"
+            src={githubLogo}
+            alt="nothing"
+            onClick={() => openURL(GITHUB_URL)}
+          ></img>
+        </div>
         <img
           id="linkedinImg"
           src={linkedinLogo}
