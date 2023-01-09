@@ -161,9 +161,11 @@
     font-size: 3rem;
   }
 
-  #contactFooter img {
-    width: 3rem;
-    margin-bottom: 2vh;
+  #contactFooter {
+    margin-bottom: 4vh;
   }
 
+  #contactFooter img {
+    width: 3rem;
+  }
 }
