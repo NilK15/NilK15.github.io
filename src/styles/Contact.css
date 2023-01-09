@@ -70,6 +70,20 @@
   margin-bottom: 0;
 }
 
+/* .githubBG {
+  display: flex;
+  place-content: center;
+  border-radius: 2vw;
+  background-color: whitesmoke;
+  box-shadow: 0px 10px 20px  black;
+  transition: .1s;
+  margin-bottom: 5vh;
+  padding: 1rem;
+} */
+
+#githubImg {
+  padding: 1rem;
+}
 .githubBG {
   display: flex;
   place-content: center;
@@ -79,7 +93,6 @@
   box-shadow: 0px 10px 20px  black;
   transition: .1s;
   margin-bottom: 5vh;
-  padding: 1rem;
 }
 
 #contactMain #linkedinImg {
