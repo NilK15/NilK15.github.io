@@ -13,7 +13,7 @@
 
 #skillsSection header {
   font-size: 15vw;
-  margin-top: 8px;
+  margin-top: 10vw;
   text-shadow: 2px 2px 5px black;
 }
 
@@ -54,6 +54,7 @@
   #skillsSection header {
     font-size: 4rem;
     align-self: start;
+    margin-top: 0;
     text-shadow: 2px 2px 5px black;
     border: initial;
     padding-left: 2vw;
