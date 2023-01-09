@@ -194,7 +194,7 @@
 
   #contactMain #linkedinImg {
     width: min(calc(18vw + 2rem), calc(300px + 2rem));
-    box-shadow: inset 0 0px 0px 10px #1B4DFF;
+    /* box-shadow: inset 0 0px 0px 10px #1B4DFF; */
   }
 
   .githubBG {
