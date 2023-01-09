@@ -119,15 +119,18 @@ main div p {
   .samplesMain {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     height: auto;
   }
 
   .samplesMain div {
     flex-direction: column;
-    height: 25vw;
-    width: 20vw;
+    /* height: 22vw; */
+    /* width: 22vw; */
+    height: min(18vw, 300px);
+    width: min(18vw, 300px);
+    padding: 1rem;
     font-size: 2.5rem;
     border-radius: 30px;
   }
@@ -137,8 +140,10 @@ main div p {
   }
 
   .samplesMain img {
-    border-radius: 0 0 0 0;
+    /* border-radius: 0 0 0 0; */
+    border-radius: 20px;
     width: 100%;
+    height: 75%;
   }
 
   #samplesSection footer {
@@ -146,7 +151,7 @@ main div p {
     flex-direction: column;
     align-items: center;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #samplesSection footer a {

@@ -65,6 +65,7 @@
   #aboutHeader p{
     text-shadow: 2px 2px 5px black;
     font-size: max(3vw, 3rem);
+    /* font-size: 3vw; */
   }
   
   #aboutMain {
@@ -74,6 +75,7 @@
   #aboutMain p {
     margin-top: 0;
     font-size: max(1.5vw, 1.5rem);
+    /* font-size: 1.5vw; */
   }
 
   #aboutMain a {
@@ -99,13 +101,14 @@
 
   .buttonsDiv {
     display: flex;
-    column-gap: 2rem;
+    column-gap: 2vw;
   }
 
   #aboutMain .buttonsDiv a {
     display: flex;
     color: white;
     font-size: max(1.3vw, 1.3rem);
+    /* font-size: 1.3vw; */
     padding: .5rem 1.5rem;
     border: none;
     border-radius: 2vw;

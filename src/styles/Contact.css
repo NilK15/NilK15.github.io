@@ -18,10 +18,11 @@
 #contactSection p.contactParagraph {
   text-shadow: 2px 2px 5px black;
   font-size: 15vw;
+  margin-bottom: 0;
 }
 
 #contactHeader p.contactSecondParagraph {
-  font-size: 4vw;
+  display: none;
   }
 
 #contactSection p {
@@ -155,8 +156,13 @@
   #contactHeader {
     align-self: flex-start;
   }
+/* #contactHeader p.contactSecondParagraph {
+  font-size: 4vw;
+  margin-top: 1vw;
+  } */
 
   #contactHeader p.contactSecondParagraph {
+    display: block;
     margin: 0;
     padding-top: 6vh;
     padding-left: 2vw;
@@ -189,7 +195,6 @@
   }
 
   .githubBG {
-    /* background-color: white; */
     margin-bottom: 0;
   }
 
