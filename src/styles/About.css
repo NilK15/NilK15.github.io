@@ -112,12 +112,15 @@
     text-decoration: none;
     background-color: #1B4DFF ;
     white-space: nowrap;
-    transition: .4s;
+    transition: .3s;
+    box-shadow: 0px 4px 5px black;
   }
 
   #aboutMain .buttonsDiv a:hover {
     background-color: white;
     color: #1B4DFF ;
+    translate: 0px 2px;
+    box-shadow: none;
   }
 
 }
