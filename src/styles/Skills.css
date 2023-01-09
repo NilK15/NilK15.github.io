@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   /* background-color: rgba(0, 0, 0, 0.960); */
+  justify-content: space-between;
   background-color: hsl(240, 18%, 7%);
   color: white;
   height: calc(100vh - 20vw);
@@ -14,20 +15,22 @@
 #skillsSection header {
   font-size: 15vw;
   margin-top: 10vw;
+  margin-bottom: 10vw;
   text-shadow: 2px 2px 5px black;
 }
 
 #skillsMain {
   display: flex;
   column-gap: 20vw;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 
 #skillsMain ol {
   list-style: none;
-  padding: 10vh 0 0 0;
-  margin: 0;
+  /* padding: 10vh 0 0 0; */
+  padding: 0;
+  margin-bottom: 100px;
 }
 
 #skillsMain li {
