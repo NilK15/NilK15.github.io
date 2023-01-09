@@ -119,14 +119,21 @@
     align-self: flex-start;
   }
 
-  #contactHeader p.contactParagraph {
+  #contactHeader p.contactSecondParagraph {
     margin: 0;
     padding-top: 6vh;
     padding-left: 2vw;
     font-size: 4rem;
   }
 
-  #contactHeader .contactSecondParagraph {
+  /* #contactHeader p.contactParagraph {
+    margin: 0;
+    padding-top: 6vh;
+    padding-left: 2vw;
+    font-size: 4rem;
+  } */
+
+  #contactHeader .contactParagraph {
     display: none;
   }
 
@@ -152,6 +159,7 @@
 
   #contactFooter img {
     width: 3rem;
+    margin-bottom: 2vh;
   }
 
 }
