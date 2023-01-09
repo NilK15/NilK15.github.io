@@ -52,8 +52,14 @@
 }
 
 
-.samplesProject:hover {
+.samplesProject:active {
   transform: translate(0px, 10px);
+}
+
+:is(.samplesProject:hover, .samplesProject:focus) {
+  /* transform: translate(0px, 10px); */
+  outline: solid 10px #1B4DFF ;
+  transition: .1s ;
 }
 
 
@@ -90,12 +96,12 @@ main div p {
   }
 
 
-  .samplesProject:hover {
+  .samplesProject:active {
     box-shadow: none;
   }
 
   .samplesProject p {
-    font-size: 2vw;
+    font-size: min(2vw, 2rem);
   }
 
   .samplesHeader {
@@ -129,8 +135,8 @@ main div p {
     flex-direction: column;
     /* height: 22vw; */
     /* width: 22vw; */
-    height: min(18vw, 300px);
-    width: min(18vw, 300px);
+    height: min(18vw, 400px);
+    width: min(18vw, 400px);
     padding: 1rem;
     font-size: 2.5rem;
     border-radius: 30px;
