@@ -47,12 +47,11 @@
   #skillsSection {
     /* background-color: #181823f1; */
     background-color: rgba(0, 0, 0, 0.960);
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   #skillsSection header {
-    font-size: 4rem;
-    margin-top: 8px;
+    font-size: 6rem;
     align-self: start;
     text-shadow: 2px 2px 5px black;
     border: initial;
@@ -62,7 +61,6 @@
   #skillsMain {
 
     /* font-size: max(3vw, 3rem); */
-    font-size:30px;
     column-gap: 30vw;
   }
 
@@ -71,6 +69,7 @@
     /* padding: 120px 0 0 0; */
     /* padding: min(10vh, 70px) 0 0 0; */
     padding:0;
+    font-size: 3rem;
   }
 
   #skillsMain li {
@@ -79,7 +78,7 @@
   }
 
   #skillsMain img {
-    width: min(15vh, 150px);
+    width: min(15vh, 300px);
   }
 
   #skillsSection {
