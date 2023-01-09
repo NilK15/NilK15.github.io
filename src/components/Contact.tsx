@@ -23,7 +23,7 @@ const Contact = () => {
         </p>
       </header>
       <main id="contactMain">
-        <div className="githubBG">
+        <div className="githubBG" onClick={() => openURL(GITHUB_URL)}>
           <img
             id="githubImg"
             src={githubLogo}

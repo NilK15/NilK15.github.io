@@ -93,6 +93,7 @@
   box-shadow: 0px 10px 20px  black;
   transition: .1s;
   margin-bottom: 5vh;
+  cursor: pointer;
 }
 
 #contactMain #linkedinImg {
