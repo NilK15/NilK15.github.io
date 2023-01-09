@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.960);
   color: white;
   height: calc(100vh - 20vw);
   max-height: 1100px;
@@ -14,7 +14,6 @@
   font-size: 15vw;
   margin-top: 8px;
   text-shadow: 2px 2px 5px black;
-  border-bottom: solid;
 }
 
 #skillsMain {
@@ -39,7 +38,8 @@
 }
 
 #skillsMain img {
-  width: 20vw;
+  /* width: 20vw; */
+  width: min(13vh, 75px);
 }
 
 @media (min-width:800px) {
