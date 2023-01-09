@@ -14,7 +14,6 @@
 }
 
 .navbar-name-div a {
-  /* font-size: 11vw; */
   font-size: 4rem;
   color: white;
   text-decoration: none;
@@ -44,7 +43,7 @@
   margin: 20vw 1vw 0 0;
   background-color: white;
   list-style: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .dropDown li {
@@ -57,6 +56,13 @@
   cursor: pointer;
 }
 
+.dropDown li:first-child:hover {
+  border-radius: 10px 10px 0 0;
+}
+
+.dropDown li:last-child {
+  border-radius: 0 0 10px 10px;
+}
 .dropDown li a {
   display: block;
   font-size: 5vw;
@@ -79,38 +85,6 @@ display: none;
   display: none;
 }
 
-
-/* @media (min-width:620px) {
-
-  .header-navbar {
-    width: 750px;
-    height: 150px;
-  }
-
-  #name {
-    font-size: 100px;
-  }
-
-  .navbar-name-div a {
-    padding-left: 15px;
-  }
-
-  .header-navbar img {
-    width: 76px;
-  }
-
-  .dropDown{
-  margin: 150px 10px 0 0;
-  }
-
-  .dropDown li a {
-    padding: 16px;
-  }
-  .dropDown li a,
-  .dropDown li:hover a {
-    font-size: 38px;
-  }
-} */
 
 @media (min-width:800px) {
   .header-navbar {
