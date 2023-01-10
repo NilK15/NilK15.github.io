@@ -48,6 +48,7 @@
 
   #skillsSection {
     justify-content: space-around;
+    max-height: none;
   }
 
   #skillsSection header {
@@ -66,7 +67,7 @@
 
   #skillsMain ol {
     padding:0;
-    font-size: min(4vw, 3rem);
+    font-size: min(3vw, 2rem);
   }
 
   #skillsMain li {
