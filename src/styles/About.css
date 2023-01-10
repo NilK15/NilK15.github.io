@@ -19,6 +19,7 @@
   font-size: 8vw;
   margin: 0;
   padding: 0;
+  text-shadow: 3px 3px 5px black;
 }
 
 .ohioText {
@@ -63,7 +64,6 @@
   }
 
   #aboutHeader p{
-    text-shadow: 2px 2px 5px black;
     font-size: max(3vw, 3rem);
     /* font-size: 3vw; */
   }

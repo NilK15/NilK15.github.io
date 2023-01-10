@@ -15,7 +15,7 @@
   font-size: 15vw;
   margin-top: 10vw;
   margin-bottom: 10vw;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 3px 3px 5px black;
 }
 
 #skillsMain {
@@ -37,6 +37,7 @@
   align-items: center;
   padding: 0;
   margin: 0 0 2vh 0;
+  text-shadow: 3px 3px 5px black;
 }
 
 #skillsMain img {
