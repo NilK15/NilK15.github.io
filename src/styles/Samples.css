@@ -59,6 +59,7 @@
   background-color: black;
   width: 60%;
   height: 100%;
+  box-shadow: 0 0px 0px 2px;
 }
 
 main div p {
@@ -87,27 +88,20 @@ main div p {
   }
 
 
-  :is(.samplesProject:hover, .samplesProject:focus) {
+  :is(.samplesMain .samplesProject:hover, .samplesProject:focus) {
     /* outline: solid 10px #1B4DFF ; */
     /* have to use this because Safari doesn't like putting radius on outlines */
     /* box-shadow: 0 0px 0px 8px #1B4DFF; */
     border: solid 8px ;
+    border-radius: 38px;
     margin: -8px;
     border-color: #1B4DFF;
     transition: border-color .2s ;
   }
 
-
-  :is(.samplesProject:hover, .samplesProject:focus) {
-
-  }
-
   .samplesProject:active {
     transform: translate(0px, 10px);
       box-shadow: none;
-  }
-
-  .samplesProject:active {
   }
 
   .samplesProject p {
@@ -141,7 +135,7 @@ main div p {
     height: auto;
   }
 
-  .samplesMain div {
+  .samplesMain .samplesProject {
     flex-direction: column;
     height: min(18vw, 400px);
     width: min(18vw, 400px);

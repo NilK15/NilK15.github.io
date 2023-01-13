@@ -23,11 +23,11 @@ const Samples = () => {
           <img src={apiFetcherPic} alt="Nothing"></img>
         </div>
         <div
-          style={{ backgroundColor: "black" }}
+          style={{ backgroundColor: "whitesmoke" }}
           className="samplesProject"
           onClick={() => window.open(YOUTUBE_URL, "_blank")}
         >
-          <p style={{ color: "white" }}>YouTube Design</p>
+          <p style={{ color: "black" }}>YouTube Design</p>
           <img src={youtubePic} alt="Nothing"></img>
         </div>
         <div className="samplesProject">
@@ -40,7 +40,6 @@ const Samples = () => {
             }}
           >
             <p style={{ whiteSpace: "pre-wrap" }}>
-              {" "}
               More Projects Coming Soon...{" "}
             </p>
           </div>
