@@ -91,9 +91,15 @@ main div p {
     /* outline: solid 10px #1B4DFF ; */
     /* have to use this because Safari doesn't like putting radius on outlines */
     /* box-shadow: 0 0px 0px 8px #1B4DFF; */
-    border: solid 8px #1B4DFF;
+    border: solid 8px ;
     margin: -8px;
-    transition: .1s ;
+    border-color: #1B4DFF;
+    transition: border-color .2s ;
+  }
+
+
+  :is(.samplesProject:hover, .samplesProject:focus) {
+
   }
 
   .samplesProject:active {

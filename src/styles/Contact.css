@@ -203,7 +203,7 @@
   #gmailImg:hover, .githubBG:hover, #contactMain #linkedinImg:hover { 
     border: solid 8px #1B4DFF;
     margin: -8px;
-    transition: .1s;
+    transition: border-color .2s;
   }
 
   #contactMain #linkedinImg:hover { 
