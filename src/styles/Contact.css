@@ -196,7 +196,8 @@
     width: min(calc(18vw + 2rem), calc(300px + 2rem));
   }
 
-  .githubBG {
+  #contactMain .githubBG{
+    width: min(calc(18vw + 2rem),calc(300px + 2rem));
     margin-bottom: 0;
   }
 
