@@ -201,7 +201,7 @@
     margin-bottom: 0;
   }
 
-  #gmailImg:hover, .githubBG:hover, #contactMain #linkedinImg:hover { 
+  #gmailImg:hover, #contactMain .githubBG:hover, #contactMain #linkedinImg:hover { 
     border: solid 8px #1B4DFF;
     border-radius: 38px;
     margin: -8px;
