@@ -237,3 +237,19 @@
     width: 3rem;
   }
 }
+
+
+@media (min-width:1920px) {
+
+  #contactMain img {
+    width: min(18vw, 400px);
+  }
+
+  #contactMain #linkedinImg {
+    width: min(calc(18vw + 2rem), calc(400px + 2rem));
+  }
+
+  #contactMain .githubBG{
+    width: min(calc(18vw + 2rem),calc(400px + 2rem));
+  }
+}
